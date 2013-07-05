@@ -5,6 +5,9 @@ var app = window.angular.module('mapMonde', []),
 
 app.controller('mapMondeCtrl', function ($scope) {
 
+  $scope.user = {nickname: '', logged: false};
+  $scope.waiting = true;
+
   socket.on('join-status', function (error) {
     console.log('receive "joint-status"', error);
     $scope.user.logged = true;
@@ -23,7 +26,9 @@ app.controller('mapMondeCtrl', function ($scope) {
     $scope.$apply();
   });
 
-  $scope.user = {nickname: '', logged: false};
+  $scope.$watch('question', function (question) {
+    $scope.waiting = ! question || ! $scope.user.logged;
+  });
 
   $scope.login = function () {
     if (! $scope.user.nickname)
