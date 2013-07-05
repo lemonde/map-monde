@@ -30,8 +30,10 @@ server.emit("question", {
 // Answer
 client.emit("answer", {
   questionId: 1,
-  lat: 10,
-  long: 10
+  answer: {
+    lat: 10,
+    long: 10
+  }
 })
 
 // -- Timer finish
@@ -86,5 +88,6 @@ server.emit("result", {
 #### answer
 
 * `int` `questionId`: Question ID
-* `float` `lat`: Latitude
-* `float` `long`: Longitude
+* `object` `answer`: Answer
+  * `float` `lat`: Latitude
+  * `float` `long`: Longitude
