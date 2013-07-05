@@ -1,0 +1,6 @@
+{
+  "endpoint": "http://arnold.lemonde-interactif.fr:8082",
+  "searchpath": [
+    "https://bower.herokuapp.com"
+  ]
+}
