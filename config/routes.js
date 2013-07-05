@@ -1,8 +1,10 @@
 'use strict';
 
+var path = require('path');
+
 module.exports = function (app) {
   // Only one route
   app.use(function (req, res) {
-    return res.render('templates/main');
+    return res.sendfile(path.resolve(__dirname + '/../server/templates/main.html'));
   });
 };
