@@ -22,24 +22,24 @@
     </form>
   </div>
 
-  <div id="waiting" ng-show="user.logged && waiting">
-  Waiting..
-  </div>
-
-  <div id="game" ng-show="user.logged && ! waiting">
-    <content ng-show="question">
+  <div id="game">
+    <content>
       <header>
-        <div class="message">
+        <div class="message" ng-show="! waiting">
           <p>Question :</p>
           <p>{{question.question}}</p>
+          <div timer></div>
+        </div>
+        <div class="waiting" ng-show="waiting">
+          Waiting...
         </div>
       </header>
-      <map ng-show="question"></map>
+      <map ng-show="! waiting"></map>
     </content>
-    <aside ng-show="result">
+    <aside ng-show="! waiting && result">
       <p>Classement</p>
       <ul>
-        <li ng-repeat="rank in result.ranking">{{rank.nickname}}</li>
+        <li ng-repeat="rank in result.ranking">{{rank.nickname}} - {{rank.score}}</li>
       </ul>
     </aside>
   </div>
@@ -50,9 +50,11 @@
   <script src="/socket.io/socket.io.js"></script>
 
   <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/circular-progress/circular-progress.js"></script>
 
   <script src="/app.js"></script>
-  <script src="/modules/map.js"></script>
+  <script src="/modules/map/map.js"></script>
+  <script src="/modules/timer/timer.js"></script>
 
 </body>
 

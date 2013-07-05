@@ -15,15 +15,15 @@ module.exports = function (server) {
         id: 1,
         question: 'Où se trouve Paris ?',
         solve: {
-          lat: 1,
-          long: 1
+          lat: 2.460181181021018,
+          long: 68.90625
         },
-        time: 10
+        time: 3
       });
     },
     scoreComputer: function (solve, answer) {
       return answer.lat;
     },
-    pauseTime: 10
+    pauseTime: 3
   });
 };
