@@ -11,7 +11,7 @@
 
 </head>
 
-<body ng-controller="mapMondeCtrl">
+<body ng-controller="mapMondeCtrl" ng-class="{'world': !user.logged}">
 
   <div id="logo"></div>
 
@@ -23,15 +23,6 @@
   </div>
 
   <div id="game" ng-show="user.logged">
-    <content>
-      <header>
-        <div class="message">
-          <p>Question :</p>
-          <p>Lorem ipsum et tout le merdier</p>
-        </div>
-      </header>
-      <map ng-show="question"></map>
-    </content>
     <aside>
       <p>Joueurs</p>
       <ul>
@@ -40,6 +31,16 @@
         <li>Three</li>
       </ul>
     </aside>
+    <div class="content">
+      <header>
+        <div class="message">
+          <p class="head">Question :</p>
+          <p class="question">Lorem ipsum et tout le merdier</p>
+        </div>
+      </header>
+      <map ng-show="question"></map>
+      <div ng-show="!question">Please wait ...</div>
+    </div>
   </div>
 
   <script src="/bower_components/less.js/dist/less-1.4.0.js"></script>
