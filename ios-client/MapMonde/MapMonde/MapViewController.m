@@ -15,11 +15,12 @@
 
 @interface MapViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *questionTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *questionTextLabel;
 @property (weak, nonatomic) IBOutlet UILabel *questionCongratsLabel;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-
+@property (nonatomic, weak) NSTimer* 		timerRefreshTimer;
 @property (strong, nonatomic) GameLocation* answer;
 
 @end
@@ -93,22 +94,23 @@
     switch ([[GameController sharedInstance] currentState]) {
         case GameStateRequireJoin: {
             [self showJoinViewController];
+            self.timerRefreshTimer = nil;
             return; }
         case GameStateJoining: {
-
+            self.timerRefreshTimer = nil;
             return; }
         case GameStateWaitingForQuestion: {
             [self hideJoinViewController];
             [self showResults];
             [self showCorrectAnswer];
+            self.timerRefreshTimer = [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(refreshTimer) userInfo:nil repeats:YES];
             return; }
         case GameStateQuestionInProgress: {
             [self hideJoinViewController];
             [self showQuestion];
             [self resetMap];
+            self.timerRefreshTimer = [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(refreshTimer) userInfo:nil repeats:YES];
             return; }
-        default:
-            break;
     }
 }
 
@@ -191,6 +193,19 @@
     [self.mapView removeAnnotations:self.mapView.annotations];
 }
 
+- (void) refreshTimer
+{
+    NSTimeInterval timeLeft = [[GameController sharedInstance] timeLeftInCurrentState];
+    self.timerLabel.hidden = timeLeft <= 0;
+    self.timerLabel.text = [NSString stringWithFormat:@"%.0f", ceil(timeLeft)];
+}
+
+- (void) setTimerRefreshTimer:(NSTimer *)timerRefreshTimer
+{
+    [_timerRefreshTimer invalidate];
+    _timerRefreshTimer = timerRefreshTimer;
+}
+
 //**************************************************************************
 #pragma mark - actions
 
@@ -207,4 +222,8 @@
     [self showAnswer];
 }
 
+- (void)viewDidUnload {
+    [self setTimerLabel:nil];
+    [super viewDidUnload];
+}
 @end
