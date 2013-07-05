@@ -30,14 +30,14 @@
       </ul>
     </aside>
     <content>
-      <header>
+      <header ng-class="{'result': question && result}">
         <div class="message" ng-show="! waiting">
           <div class="timer" timer></div>
           <p class="head">
             <span ng-show="question && ! result">Question :</span>
             <span ng-show="question && result">Réponse à la question :</span>
           </p>
-          <p class="lbl">{{question.question}}</p>
+          <p class="question">{{question.question}}</p>
         </div>
       </header>
       <map ng-show="! waiting"></map>
