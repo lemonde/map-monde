@@ -19,7 +19,7 @@ module.exports = function (server) {
             lat: 44.80401,
             long: 20.46513
           },
-          time: 10
+          time: 8
         },
         {
           id: 2,
@@ -37,7 +37,7 @@ module.exports = function (server) {
             lat: 78.2186,
             long: 15.64007
           },
-          time: 3
+          time: 10
         }
       ];
 
