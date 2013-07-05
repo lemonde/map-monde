@@ -9,7 +9,7 @@ client.emit("join", {
 })
 
 server.emit("join-status", {
-  success: true
+  error: false
 })
 
 // New question
@@ -41,3 +41,36 @@ server.emit("result", {
 
 // -> GOTO "New question"
 ```
+
+## Events
+
+### Server
+
+#### join-status
+
+* `{bool|string}` `error`: `false` if join is accepted, else the error.
+
+#### question
+
+* `string` `question`: Question
+* `int` `timer`: Timer in seconds
+
+#### result
+
+* `float` `lat`: Latitude
+* `float` `long`: Longitude
+* `array` `ranking`: Scores of the last question.
+  * `string` `nickname`: User name
+  * `int` `score`: Score
+* `int` `timer`: Timer in seconds
+
+### Client
+
+#### join
+
+* `string` `nickname`: User name
+
+#### answer
+
+* `float` `lat`: Latitude
+* `float` `long`: Longitude
