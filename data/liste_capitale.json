@@ -20,12 +20,12 @@
     "latitude":46.05108,
     "longitude":14.50513,
     "population":255115,
-    "place_path":"Slovénie>Ljubljana",
+    "place_path":"SlovÃ©nie>Ljubljana",
     "feature_code":"PPLC",
     "country_geonameid":3190538,
     "country_code":"SI",
     "country_rubriqueid":1788917,
-    "country_name":"Slovénie",
+    "country_name":"SlovÃ©nie",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -35,12 +35,12 @@
     "latitude":78.2186,
     "longitude":15.64007,
     "population":2060,
-    "place_path":"Svalbard et Île Jan Mayen>Svalbard>Spitsbergen",
+    "place_path":"Svalbard et ÃŽle Jan Mayen>Svalbard>Spitsbergen",
     "feature_code":"PPLC",
     "country_geonameid":607072,
     "country_code":"SJ",
     "country_rubriqueid":null,
-    "country_name":"Svalbard et Île Jan Mayen",
+    "country_name":"Svalbard et ÃŽle Jan Mayen",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -65,12 +65,12 @@
     "latitude":-15.93872,
     "longitude":-5.71675,
     "population":637,
-    "place_path":"Sainte-Hélène>Saint Helena",
+    "place_path":"Sainte-HÃ©lÃ¨ne>Saint Helena",
     "feature_code":"PPLC",
     "country_geonameid":3370751,
     "country_code":"SH",
     "country_rubriqueid":null,
-    "country_name":"Sainte-Hélène",
+    "country_name":"Sainte-HÃ©lÃ¨ne",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
@@ -80,12 +80,12 @@
     "latitude":59.33258,
     "longitude":18.0649,
     "population":1253309,
-    "place_path":"Suède>Comté de Stockholm>Stockholms Kommun",
+    "place_path":"SuÃ¨de>ComtÃ© de Stockholm>Stockholms Kommun",
     "feature_code":"PPLC",
     "country_geonameid":2661886,
     "country_code":"SE",
     "country_rubriqueid":1668264,
-    "country_name":"Suède",
+    "country_name":"SuÃ¨de",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -102,7 +102,7 @@
     "country_rubriqueid":null,
     "country_name":"Antigua et Barbuda",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3573374,
@@ -117,7 +117,7 @@
     "country_rubriqueid":null,
     "country_name":"Anguilla",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":2240449,
@@ -140,7 +140,7 @@
     "latitude":41.3275,
     "longitude":19.81889,
     "population":374801,
-    "place_path":"Albanie>Tiranë",
+    "place_path":"Albanie>TiranÃ«",
     "feature_code":"PPLC",
     "country_geonameid":783754,
     "country_code":"AL",
@@ -155,12 +155,12 @@
     "latitude":40.18111,
     "longitude":44.51361,
     "population":1093485,
-    "place_path":"Arménie>Yerevan",
+    "place_path":"ArmÃ©nie>Yerevan",
     "feature_code":"PPLC",
     "country_geonameid":174982,
     "country_code":"AM",
     "country_rubriqueid":1667265,
-    "country_name":"Arménie",
+    "country_name":"ArmÃ©nie",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -185,12 +185,12 @@
     "latitude":24.46667,
     "longitude":54.36667,
     "population":603492,
-    "place_path":"Émirats Arabes Unis>Abou Dabi",
+    "place_path":"Ã‰mirats Arabes Unis>Abou Dabi",
     "feature_code":"PPLC",
     "country_geonameid":290557,
     "country_code":"AE",
     "country_rubriqueid":null,
-    "country_name":"Émirats Arabes Unis",
+    "country_name":"Ã‰mirats Arabes Unis",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -215,14 +215,14 @@
     "latitude":-14.27806,
     "longitude":-170.7025,
     "population":11500,
-    "place_path":"Samoa américaines>Eastern District",
+    "place_path":"Samoa amÃ©ricaines>Eastern District",
     "feature_code":"PPLC",
     "country_geonameid":5880801,
     "country_code":"AS",
     "country_rubriqueid":null,
-    "country_name":"Samoa américaines",
+    "country_name":"Samoa amÃ©ricaines",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":2761369,
@@ -252,7 +252,7 @@
     "country_rubriqueid":1656927,
     "country_name":"Argentine",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":3374036,
@@ -267,7 +267,7 @@
     "country_rubriqueid":null,
     "country_name":"Barbade",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":1185241,
@@ -275,7 +275,7 @@
     "latitude":23.7104,
     "longitude":90.40744,
     "population":10356500,
-    "place_path":"Bangladesh>Dhâkâ>Dhaka District",
+    "place_path":"Bangladesh>DhÃ¢kÃ¢>Dhaka District",
     "feature_code":"PPLC",
     "country_geonameid":1210997,
     "country_code":"BD",
@@ -297,7 +297,7 @@
     "country_rubriqueid":1671472,
     "country_name":"Australie",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":3577154,
@@ -312,7 +312,7 @@
     "country_rubriqueid":null,
     "country_name":"Aruba",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3041732,
@@ -320,12 +320,12 @@
     "latitude":60.09726,
     "longitude":19.93481,
     "population":10682,
-    "place_path":"Îles Åland>Mariehamn",
+    "place_path":"ÃŽles Ã…land>Mariehamn",
     "feature_code":"PPLC",
     "country_geonameid":661882,
     "country_code":"AX",
     "country_rubriqueid":null,
-    "country_name":"Îles Åland",
+    "country_name":"ÃŽles Ã…land",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -335,12 +335,12 @@
     "latitude":40.37767,
     "longitude":49.89201,
     "population":1116513,
-    "place_path":"Azerbaïdjan>Baki",
+    "place_path":"AzerbaÃ¯djan>Baki",
     "feature_code":"PPLC",
     "country_geonameid":587116,
     "country_code":"AZ",
     "country_rubriqueid":1824718,
-    "country_name":"Azerbaïdjan",
+    "country_name":"AzerbaÃ¯djan",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -350,12 +350,12 @@
     "latitude":43.84864,
     "longitude":18.35644,
     "population":696731,
-    "place_path":"Bosnie-Herzégovine>Federation of Bosnia and Herzegovina>Kanton Sarajevo",
+    "place_path":"Bosnie-HerzÃ©govine>Federation of Bosnia and Herzegovina>Kanton Sarajevo",
     "feature_code":"PPLC",
     "country_geonameid":3277605,
     "country_code":"BA",
     "country_rubriqueid":1668349,
-    "country_name":"Bosnie-Herzégovine",
+    "country_name":"Bosnie-HerzÃ©govine",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -365,12 +365,12 @@
     "latitude":26.21536,
     "longitude":50.5832,
     "population":147074,
-    "place_path":"Bahreïn>Capital",
+    "place_path":"BahreÃ¯n>Capital",
     "feature_code":"PPLC",
     "country_geonameid":290291,
     "country_code":"BH",
     "country_rubriqueid":1809158,
-    "country_name":"Bahreïn",
+    "country_name":"BahreÃ¯n",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -395,12 +395,12 @@
     "latitude":6.49646,
     "longitude":2.60359,
     "population":234168,
-    "place_path":"Bénin>Quémé",
+    "place_path":"BÃ©nin>QuÃ©mÃ©",
     "feature_code":"PPLC",
     "country_geonameid":2395170,
     "country_code":"BJ",
     "country_rubriqueid":null,
-    "country_name":"Bénin",
+    "country_name":"BÃ©nin",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
@@ -410,14 +410,14 @@
     "latitude":17.89618,
     "longitude":-62.84978,
     "population":5988,
-    "place_path":"Saint-Barthélémy",
+    "place_path":"Saint-BarthÃ©lÃ©my",
     "feature_code":"PPLC",
     "country_geonameid":3578476,
     "country_code":"BL",
     "country_rubriqueid":null,
-    "country_name":"Saint-Barthélémy",
+    "country_name":"Saint-BarthÃ©lÃ©my",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3573197,
@@ -432,7 +432,7 @@
     "country_rubriqueid":null,
     "country_name":"Bermudes",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":1820906,
@@ -440,12 +440,12 @@
     "latitude":4.94029,
     "longitude":114.94806,
     "population":64409,
-    "place_path":"Brunéi Darussalam>Brunei and Muara",
+    "place_path":"BrunÃ©i Darussalam>Brunei and Muara",
     "feature_code":"PPLC",
     "country_geonameid":1820814,
     "country_code":"BN",
     "country_rubriqueid":null,
-    "country_name":"Brunéi Darussalam",
+    "country_name":"BrunÃ©i Darussalam",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -462,7 +462,7 @@
     "country_rubriqueid":1738122,
     "country_name":"Bolivie",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":3469058,
@@ -470,14 +470,14 @@
     "latitude":-15.77972,
     "longitude":-47.92972,
     "population":2207718,
-    "place_path":"Brésil>Federal District>Brasília",
+    "place_path":"BrÃ©sil>Federal District>BrasÃ­lia",
     "feature_code":"PPLC",
     "country_geonameid":3469034,
     "country_code":"BR",
     "country_rubriqueid":1666636,
-    "country_name":"Brésil",
+    "country_name":"BrÃ©sil",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":6094817,
@@ -492,7 +492,7 @@
     "country_rubriqueid":1668027,
     "country_name":"Canada",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3571824,
@@ -507,7 +507,7 @@
     "country_rubriqueid":null,
     "country_name":"Bahamas",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":1252416,
@@ -560,12 +560,12 @@
     "latitude":53.9,
     "longitude":27.56667,
     "population":1742124,
-    "place_path":"Biélorussie>Minskaya Voblasts",
+    "place_path":"BiÃ©lorussie>Minskaya Voblasts",
     "feature_code":"PPLC",
     "country_geonameid":630336,
     "country_code":"BY",
     "country_rubriqueid":1668335,
-    "country_name":"Biélorussie",
+    "country_name":"BiÃ©lorussie",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -597,7 +597,7 @@
     "country_rubriqueid":1799994,
     "country_name":"Belize",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":727011,
@@ -620,12 +620,12 @@
     "latitude":6.82055,
     "longitude":-5.27674,
     "population":194530,
-    "place_path":"Côte d'Ivoire>Lacs",
+    "place_path":"CÃ´te d'Ivoire>Lacs",
     "feature_code":"PPLC",
     "country_geonameid":2287781,
     "country_code":"CI",
     "country_rubriqueid":1656730,
-    "country_name":"Côte d'Ivoire",
+    "country_name":"CÃ´te d'Ivoire",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
@@ -635,14 +635,14 @@
     "latitude":-21.20778,
     "longitude":-159.775,
     "population":13373,
-    "place_path":"Îles Cook",
+    "place_path":"ÃŽles Cook",
     "feature_code":"PPLC",
     "country_geonameid":1899402,
     "country_code":"CK",
     "country_rubriqueid":null,
-    "country_name":"Îles Cook",
+    "country_name":"ÃŽles Cook",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":3871336,
@@ -657,11 +657,11 @@
     "country_rubriqueid":1668041,
     "country_name":"Chili",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":2220957,
-    "libelle":"Yaoundé",
+    "libelle":"YaoundÃ©",
     "latitude":3.86667,
     "longitude":11.51667,
     "population":1299369,
@@ -680,12 +680,12 @@
     "latitude":-12.15681,
     "longitude":96.82251,
     "population":120,
-    "place_path":"Îles Cocos",
+    "place_path":"ÃŽles Cocos",
     "feature_code":"PPLC",
     "country_geonameid":1547376,
     "country_code":"CC",
     "country_rubriqueid":null,
-    "country_name":"Îles Cocos",
+    "country_name":"ÃŽles Cocos",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -751,7 +751,7 @@
   },
   {
     "geonameid":1816670,
-    "libelle":"Pékin",
+    "libelle":"PÃ©kin",
     "latitude":39.9075,
     "longitude":116.39723,
     "population":7480601,
@@ -781,7 +781,7 @@
   },
   {
     "geonameid":3688689,
-    "libelle":"Bogotá",
+    "libelle":"BogotÃ¡",
     "latitude":4.60971,
     "longitude":-74.08175,
     "population":7102602,
@@ -792,22 +792,22 @@
     "country_rubriqueid":1668062,
     "country_name":"Colombie",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":3621849,
-    "libelle":"San José",
+    "libelle":"San JosÃ©",
     "latitude":9.93333,
     "longitude":-84.08333,
     "population":335007,
-    "place_path":"Costa Rica>San José",
+    "place_path":"Costa Rica>San JosÃ©",
     "feature_code":"PPLC",
     "country_geonameid":3624060,
     "country_code":"CR",
     "country_rubriqueid":1771858,
     "country_name":"Costa Rica",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3067696,
@@ -815,12 +815,12 @@
     "latitude":50.08804,
     "longitude":14.42076,
     "population":1165581,
-    "place_path":"République tchèque>Prague ville-capitale",
+    "place_path":"RÃ©publique tchÃ¨que>Prague ville-capitale",
     "feature_code":"PPLC",
     "country_geonameid":3077311,
     "country_code":"CZ",
     "country_rubriqueid":1668250,
-    "country_name":"République tchèque",
+    "country_name":"RÃ©publique tchÃ¨que",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -837,7 +837,7 @@
     "country_rubriqueid":1668076,
     "country_name":"Cuba",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3374333,
@@ -860,14 +860,14 @@
     "latitude":12.1084,
     "longitude":-68.93354,
     "population":125000,
-    "place_path":"Curaçao",
+    "place_path":"CuraÃ§ao",
     "feature_code":"PPLC",
     "country_geonameid":7626836,
     "country_code":"CW",
     "country_rubriqueid":null,
-    "country_name":"Curaçao",
+    "country_name":"CuraÃ§ao",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":2078127,
@@ -875,12 +875,12 @@
     "latitude":-10.42172,
     "longitude":105.67912,
     "population":500,
-    "place_path":"Île Christmas",
+    "place_path":"ÃŽle Christmas",
     "feature_code":"PPLC",
     "country_geonameid":2078138,
     "country_code":"CX",
     "country_rubriqueid":null,
-    "country_name":"Île Christmas",
+    "country_name":"ÃŽle Christmas",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -905,12 +905,12 @@
     "latitude":36.7525,
     "longitude":3.04197,
     "population":1977663,
-    "place_path":"Algérie>Alger",
+    "place_path":"AlgÃ©rie>Alger",
     "feature_code":"PPLC",
     "country_geonameid":2589581,
     "country_code":"DZ",
     "country_rubriqueid":1656683,
-    "country_name":"Algérie",
+    "country_name":"AlgÃ©rie",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
@@ -920,14 +920,14 @@
     "latitude":-0.22985,
     "longitude":-78.52495,
     "population":1399814,
-    "place_path":"Équateur>Pichincha",
+    "place_path":"Ã‰quateur>Pichincha",
     "feature_code":"PPLC",
     "country_geonameid":3658394,
     "country_code":"EC",
     "country_rubriqueid":1824760,
-    "country_name":"Équateur",
+    "country_name":"Ã‰quateur",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":223817,
@@ -950,7 +950,7 @@
     "latitude":55.67594,
     "longitude":12.56553,
     "population":1153615,
-    "place_path":"Danemark>Hovedstaden>Københavns Kommune",
+    "place_path":"Danemark>Hovedstaden>KÃ¸benhavns Kommune",
     "feature_code":"PPLC",
     "country_geonameid":2623032,
     "country_code":"DK",
@@ -972,7 +972,7 @@
     "country_rubriqueid":null,
     "country_name":"Dominique",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3492908,
@@ -980,14 +980,14 @@
     "latitude":18.50012,
     "longitude":-69.98857,
     "population":2201941,
-    "place_path":"République Dominicaine>Distrito Nacional",
+    "place_path":"RÃ©publique Dominicaine>Distrito Nacional",
     "feature_code":"PPLC",
     "country_geonameid":3508796,
     "country_code":"DO",
     "country_rubriqueid":null,
-    "country_name":"République Dominicaine",
+    "country_name":"RÃ©publique Dominicaine",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":588409,
@@ -1010,18 +1010,18 @@
     "latitude":30.06263,
     "longitude":31.24967,
     "population":7734614,
-    "place_path":"Égypte>Al Qhirah",
+    "place_path":"Ã‰gypte>Al Qhirah",
     "feature_code":"PPLC",
     "country_geonameid":357994,
     "country_code":"EG",
     "country_rubriqueid":1616925,
-    "country_name":"Égypte",
+    "country_name":"Ã‰gypte",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
   {
     "geonameid":2462881,
-    "libelle":"Laâyoune",
+    "libelle":"LaÃ¢youne",
     "latitude":27.16224,
     "longitude":-13.20315,
     "population":188084,
@@ -1040,12 +1040,12 @@
     "latitude":15.33805,
     "longitude":38.93184,
     "population":563930,
-    "place_path":"Érythrée>Makel",
+    "place_path":"Ã‰rythrÃ©e>Makel",
     "feature_code":"PPLC",
     "country_geonameid":338010,
     "country_code":"ER",
     "country_rubriqueid":1820137,
-    "country_name":"Érythrée",
+    "country_name":"Ã‰rythrÃ©e",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
@@ -1055,7 +1055,7 @@
     "latitude":40.4165,
     "longitude":-3.70256,
     "population":3255944,
-    "place_path":"Espagne>Communauté de Madrid>Province de Madrid",
+    "place_path":"Espagne>CommunautÃ© de Madrid>Province de Madrid",
     "feature_code":"PPLC",
     "country_geonameid":2510769,
     "country_code":"ES",
@@ -1070,7 +1070,7 @@
     "latitude":48.85341,
     "longitude":2.3488,
     "population":2138551,
-    "place_path":"France>Île-de-France>Paris",
+    "place_path":"France>ÃŽle-de-France>Paris",
     "feature_code":"PPLC",
     "country_geonameid":3017382,
     "country_code":"FR",
@@ -1085,12 +1085,12 @@
     "latitude":9.02497,
     "longitude":38.74689,
     "population":2757729,
-    "place_path":"Éthiopie>ds beba",
+    "place_path":"Ã‰thiopie>ds beba",
     "feature_code":"PPLC",
     "country_geonameid":337996,
     "country_code":"ET",
     "country_rubriqueid":1735993,
-    "country_name":"Éthiopie",
+    "country_name":"Ã‰thiopie",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
@@ -1100,7 +1100,7 @@
     "latitude":60.16952,
     "longitude":24.93545,
     "population":558457,
-    "place_path":"Finlande>Finlande-Méridionale>Uusimaa",
+    "place_path":"Finlande>Finlande-MÃ©ridionale>Uusimaa",
     "feature_code":"PPLC",
     "country_geonameid":660013,
     "country_code":"FI",
@@ -1115,14 +1115,14 @@
     "latitude":-18.14161,
     "longitude":178.44149,
     "population":77366,
-    "place_path":"Îles Fidji>Central",
+    "place_path":"ÃŽles Fidji>Central",
     "feature_code":"PPLC",
     "country_geonameid":2205218,
     "country_code":"FJ",
     "country_rubriqueid":1824788,
-    "country_name":"Îles Fidji",
+    "country_name":"ÃŽles Fidji",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":3426691,
@@ -1130,14 +1130,14 @@
     "latitude":-51.7,
     "longitude":-57.85,
     "population":2213,
-    "place_path":"Îles Malouines",
+    "place_path":"ÃŽles Malouines",
     "feature_code":"PPLC",
     "country_geonameid":3474414,
     "country_code":"FK",
     "country_rubriqueid":null,
-    "country_name":"Îles Malouines",
+    "country_name":"ÃŽles Malouines",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":2081986,
@@ -1145,27 +1145,27 @@
     "latitude":6.92477,
     "longitude":158.16109,
     "population":0,
-    "place_path":"Micronésie>Pohnpei>Sokehs Municipality",
+    "place_path":"MicronÃ©sie>Pohnpei>Sokehs Municipality",
     "feature_code":"PPLC",
     "country_geonameid":2081918,
     "country_code":"FM",
     "country_rubriqueid":null,
-    "country_name":"Micronésie",
+    "country_name":"MicronÃ©sie",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":2611396,
-    "libelle":"Tórshavn",
+    "libelle":"TÃ³rshavn",
     "latitude":62.00973,
     "longitude":-6.77164,
     "population":13200,
-    "place_path":"Îles Féroé>Streymoy>Tórshavn",
+    "place_path":"ÃŽles FÃ©roÃ©>Streymoy>TÃ³rshavn",
     "feature_code":"PPLC",
     "country_geonameid":2622320,
     "country_code":"FO",
     "country_rubriqueid":null,
-    "country_name":"Îles Féroé",
+    "country_name":"ÃŽles FÃ©roÃ©",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -1212,22 +1212,22 @@
     "country_rubriqueid":1735011,
     "country_name":"Guatemala",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":4044012,
-    "libelle":"Hagåtña",
+    "libelle":"HagÃ¥tÃ±a",
     "latitude":13.47567,
     "longitude":144.74886,
     "population":1051,
-    "place_path":"Guam>Hagåtña Municipality",
+    "place_path":"Guam>HagÃ¥tÃ±a Municipality",
     "feature_code":"PPLC",
     "country_geonameid":4043988,
     "country_code":"GU",
     "country_rubriqueid":null,
     "country_name":"Guam",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":2374775,
@@ -1235,12 +1235,12 @@
     "latitude":11.86357,
     "longitude":-15.59767,
     "population":388028,
-    "place_path":"Guinée-Bissau>Bissau Autonomous Region",
+    "place_path":"GuinÃ©e-Bissau>Bissau Autonomous Region",
     "feature_code":"PPLC",
     "country_geonameid":2372248,
     "country_code":"GW",
     "country_rubriqueid":1684960,
-    "country_name":"Guinée-Bissau",
+    "country_name":"GuinÃ©e-Bissau",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
@@ -1257,7 +1257,7 @@
     "country_rubriqueid":null,
     "country_name":"Guyana",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":1819729,
@@ -1276,16 +1276,16 @@
   },
   {
     "geonameid":264371,
-    "libelle":"Athènes",
+    "libelle":"AthÃ¨nes",
     "latitude":37.97945,
     "longitude":23.71622,
     "population":729137,
-    "place_path":"Grèce>Attique>Nomarchía Athínas",
+    "place_path":"GrÃ¨ce>Attique>NomarchÃ­a AthÃ­nas",
     "feature_code":"PPLC",
     "country_geonameid":390903,
     "country_code":"GR",
     "country_rubriqueid":1666676,
-    "country_name":"Grèce",
+    "country_name":"GrÃ¨ce",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -1295,14 +1295,14 @@
     "latitude":14.0818,
     "longitude":-87.20681,
     "population":850848,
-    "place_path":"Honduras>Francisco Morazán",
+    "place_path":"Honduras>Francisco MorazÃ¡n",
     "feature_code":"PPLC",
     "country_geonameid":3608932,
     "country_code":"HN",
     "country_rubriqueid":1813346,
     "country_name":"Honduras",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3579925,
@@ -1317,7 +1317,7 @@
     "country_rubriqueid":null,
     "country_name":"Grenade",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":611717,
@@ -1325,12 +1325,12 @@
     "latitude":41.69411,
     "longitude":44.83368,
     "population":1049498,
-    "place_path":"Géorgie>T'bilisi",
+    "place_path":"GÃ©orgie>T'bilisi",
     "feature_code":"PPLC",
     "country_geonameid":614540,
     "country_code":"GE",
     "country_rubriqueid":1668178,
-    "country_name":"Géorgie",
+    "country_name":"GÃ©orgie",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -1347,7 +1347,7 @@
     "country_rubriqueid":1616681,
     "country_name":"Guyane",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":3042287,
@@ -1407,7 +1407,7 @@
     "country_rubriqueid":null,
     "country_name":"Groenland",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":2413876,
@@ -1430,12 +1430,12 @@
     "latitude":9.53795,
     "longitude":-13.67729,
     "population":1767200,
-    "place_path":"Guinée>Conakry",
+    "place_path":"GuinÃ©e>Conakry",
     "feature_code":"PPLC",
     "country_geonameid":2420477,
     "country_code":"GN",
     "country_rubriqueid":1824816,
-    "country_name":"Guinée",
+    "country_name":"GuinÃ©e",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
@@ -1452,7 +1452,7 @@
     "country_rubriqueid":1616680,
     "country_name":"Guadeloupe",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":2309527,
@@ -1460,12 +1460,12 @@
     "latitude":3.75,
     "longitude":8.78333,
     "population":155963,
-    "place_path":"Guinée équatoriale>Bioko Norte",
+    "place_path":"GuinÃ©e Ã©quatoriale>Bioko Norte",
     "feature_code":"PPLC",
     "country_geonameid":2309096,
     "country_code":"GQ",
     "country_rubriqueid":1824830,
-    "country_name":"Guinée équatoriale",
+    "country_name":"GuinÃ©e Ã©quatoriale",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
@@ -1475,12 +1475,12 @@
     "latitude":-54.28111,
     "longitude":-36.5092,
     "population":2,
-    "place_path":"Géorgie du Sud et les îles Sandwich du Sud",
+    "place_path":"GÃ©orgie du Sud et les Ã®les Sandwich du Sud",
     "feature_code":"PPLC",
     "country_geonameid":3474415,
     "country_code":"GS",
     "country_rubriqueid":null,
-    "country_name":"Géorgie du Sud et les îles Sandwich du Sud",
+    "country_name":"GÃ©orgie du Sud et les Ã®les Sandwich du Sud",
     "continent_geonameid":6255152,
     "continent_name":"Antartique"
   },
@@ -1490,12 +1490,12 @@
     "latitude":-6.21462,
     "longitude":106.84513,
     "population":8540121,
-    "place_path":"Indonésie>Jakarta Raya",
+    "place_path":"IndonÃ©sie>Jakarta Raya",
     "feature_code":"PPLC",
     "country_geonameid":1643084,
     "country_code":"ID",
     "country_rubriqueid":1668120,
-    "country_name":"Indonésie",
+    "country_name":"IndonÃ©sie",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -1535,14 +1535,14 @@
     "latitude":18.53917,
     "longitude":-72.335,
     "population":1234742,
-    "place_path":"Haïti>Ouest",
+    "place_path":"HaÃ¯ti>Ouest",
     "feature_code":"PPLC",
     "country_geonameid":3723988,
     "country_code":"HT",
     "country_rubriqueid":1668091,
-    "country_name":"Haïti",
+    "country_name":"HaÃ¯ti",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":1261481,
@@ -1580,12 +1580,12 @@
     "latitude":54.15,
     "longitude":-4.48333,
     "population":26218,
-    "place_path":"Man (Île)>Isle of Man",
+    "place_path":"Man (ÃŽle)>Isle of Man",
     "feature_code":"PPLC",
     "country_geonameid":3042225,
     "country_code":"IM",
     "country_rubriqueid":null,
-    "country_name":"Man (Île)",
+    "country_name":"Man (ÃŽle)",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -1621,7 +1621,7 @@
   },
   {
     "geonameid":112931,
-    "libelle":"Téhéran",
+    "libelle":"TÃ©hÃ©ran",
     "latitude":35.69439,
     "longitude":51.42151,
     "population":7153309,
@@ -1636,11 +1636,11 @@
   },
   {
     "geonameid":3413829,
-    "libelle":"Reykjavík",
+    "libelle":"ReykjavÃ­k",
     "latitude":64.13548,
     "longitude":-21.89541,
     "population":113906,
-    "place_path":"Islande>Région de la capitale",
+    "place_path":"Islande>RÃ©gion de la capitale",
     "feature_code":"PPLC",
     "country_geonameid":2629691,
     "country_code":"IS",
@@ -1670,12 +1670,12 @@
     "latitude":42.44111,
     "longitude":19.26361,
     "population":136473,
-    "place_path":"Monténégro>Optina Podgorica",
+    "place_path":"MontÃ©nÃ©gro>Optina Podgorica",
     "feature_code":"PPLC",
     "country_geonameid":3194884,
     "country_code":"ME",
     "country_rubriqueid":1773029,
-    "country_name":"Monténégro",
+    "country_name":"MontÃ©nÃ©gro",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -1692,7 +1692,7 @@
     "country_rubriqueid":null,
     "country_name":"Saint-Martin",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":1070940,
@@ -1715,14 +1715,14 @@
     "latitude":7.08971,
     "longitude":171.38027,
     "population":25400,
-    "place_path":"Îles Marshall>Majuro Atoll",
+    "place_path":"ÃŽles Marshall>Majuro Atoll",
     "feature_code":"PPLC",
     "country_geonameid":2080185,
     "country_code":"MH",
     "country_rubriqueid":null,
-    "country_name":"Îles Marshall",
+    "country_name":"ÃŽles Marshall",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":1526273,
@@ -1745,12 +1745,12 @@
     "latitude":42.00122,
     "longitude":21.42878,
     "population":474889,
-    "place_path":"Macédoine>Karpo",
+    "place_path":"MacÃ©doine>Karpo",
     "feature_code":"PPLC",
     "country_geonameid":718075,
     "country_code":"MK",
     "country_rubriqueid":null,
-    "country_name":"Macédoine",
+    "country_name":"MacÃ©doine",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -1797,7 +1797,7 @@
     "country_rubriqueid":null,
     "country_name":"Sainte-Lucie",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3042030,
@@ -1940,7 +1940,7 @@
     "latitude":11.56245,
     "longitude":104.91601,
     "population":1573544,
-    "place_path":"Cambodge>Krng Phnum Pénh",
+    "place_path":"Cambodge>Krng Phnum PÃ©nh",
     "feature_code":"PPLC",
     "country_geonameid":1831722,
     "country_code":"KH",
@@ -1977,7 +1977,7 @@
     "country_rubriqueid":null,
     "country_name":"Kiribati",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":921772,
@@ -1985,7 +1985,7 @@
     "latitude":-11.70216,
     "longitude":43.25506,
     "population":42872,
-    "place_path":"Comores>Île Autonome de Grande Comore",
+    "place_path":"Comores>ÃŽle Autonome de Grande Comore",
     "feature_code":"PPLC",
     "country_geonameid":921929,
     "country_code":"KM",
@@ -2015,14 +2015,14 @@
     "latitude":17.99702,
     "longitude":-76.79358,
     "population":937700,
-    "place_path":"Jamaïque>Kingston",
+    "place_path":"JamaÃ¯que>Kingston",
     "feature_code":"PPLC",
     "country_geonameid":3489940,
     "country_code":"JM",
     "country_rubriqueid":1824845,
-    "country_name":"Jamaïque",
+    "country_name":"JamaÃ¯que",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3575551,
@@ -2030,14 +2030,14 @@
     "latitude":17.29484,
     "longitude":-62.7261,
     "population":12920,
-    "place_path":"Saint-Christophe-et-Niévès>Saint George Basseterre",
+    "place_path":"Saint-Christophe-et-NiÃ©vÃ¨s>Saint George Basseterre",
     "feature_code":"PPLC",
     "country_geonameid":3575174,
     "country_code":"KN",
     "country_rubriqueid":null,
-    "country_name":"Saint-Christophe-et-Niévès",
+    "country_name":"Saint-Christophe-et-NiÃ©vÃ¨s",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":2210247,
@@ -2075,27 +2075,27 @@
     "latitude":39.03385,
     "longitude":125.75432,
     "population":3222000,
-    "place_path":"Corée du Nord>P'yngyang-si",
+    "place_path":"CorÃ©e du Nord>P'yngyang-si",
     "feature_code":"PPLC",
     "country_geonameid":1873107,
     "country_code":"KP",
     "country_rubriqueid":1667025,
-    "country_name":"Corée du Nord",
+    "country_name":"CorÃ©e du Nord",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
   {
     "geonameid":1835848,
-    "libelle":"Séoul",
+    "libelle":"SÃ©oul",
     "latitude":37.56826,
     "longitude":126.97783,
     "population":10349312,
-    "place_path":"Corée du Sud>Seoul",
+    "place_path":"CorÃ©e du Sud>Seoul",
     "feature_code":"PPLC",
     "country_geonameid":1835841,
     "country_code":"KR",
     "country_rubriqueid":1668105,
-    "country_name":"Corée du Sud",
+    "country_name":"CorÃ©e du Sud",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -2105,7 +2105,7 @@
     "latitude":34.01325,
     "longitude":-6.83255,
     "population":1655753,
-    "place_path":"Maroc>Rabat-Salé-Zemmour-Zaër>Rabat",
+    "place_path":"Maroc>Rabat-SalÃ©-Zemmour-ZaÃ«r>Rabat",
     "feature_code":"PPLC",
     "country_geonameid":2542007,
     "country_code":"MA",
@@ -2131,16 +2131,16 @@
   },
   {
     "geonameid":285787,
-    "libelle":"Koweït",
+    "libelle":"KoweÃ¯t",
     "latitude":29.36972,
     "longitude":47.97833,
     "population":60064,
-    "place_path":"Koweït>Al imah",
+    "place_path":"KoweÃ¯t>Al imah",
     "feature_code":"PPLC",
     "country_geonameid":285570,
     "country_code":"KW",
     "country_rubriqueid":null,
-    "country_name":"Koweït",
+    "country_name":"KoweÃ¯t",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -2150,14 +2150,14 @@
     "latitude":19.28692,
     "longitude":-81.36706,
     "population":29370,
-    "place_path":"Îles Caïmans",
+    "place_path":"ÃŽles CaÃ¯mans",
     "feature_code":"PPLC",
     "country_geonameid":3580718,
     "country_code":"KY",
     "country_rubriqueid":null,
-    "country_name":"Îles Caïmans",
+    "country_name":"ÃŽles CaÃ¯mans",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":2993458,
@@ -2180,14 +2180,14 @@
     "latitude":-29.05459,
     "longitude":167.96628,
     "population":880,
-    "place_path":"Île Norfolk",
+    "place_path":"ÃŽle Norfolk",
     "feature_code":"PPLC",
     "country_geonameid":2155115,
     "country_code":"NF",
     "country_rubriqueid":null,
-    "country_name":"Île Norfolk",
+    "country_name":"ÃŽle Norfolk",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":1735161,
@@ -2251,18 +2251,18 @@
   },
   {
     "geonameid":2139521,
-    "libelle":"Nouméa",
+    "libelle":"NoumÃ©a",
     "latitude":-22.27631,
     "longitude":166.4572,
     "population":93060,
-    "place_path":"Nouvelle-Calédonie>Province Sud>Nouméa",
+    "place_path":"Nouvelle-CalÃ©donie>Province Sud>NoumÃ©a",
     "feature_code":"PPLC",
     "country_geonameid":2139685,
     "country_code":"NC",
     "country_rubriqueid":null,
-    "country_name":"Nouvelle-Calédonie",
+    "country_name":"Nouvelle-CalÃ©donie",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":2440485,
@@ -2337,7 +2337,7 @@
     "country_rubriqueid":1698012,
     "country_name":"Nicaragua",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":1821274,
@@ -2360,14 +2360,14 @@
     "latitude":15.21233,
     "longitude":145.7545,
     "population":48220,
-    "place_path":"Îles Mariannes du Nord>Saipan Municipality",
+    "place_path":"ÃŽles Mariannes du Nord>Saipan Municipality",
     "feature_code":"PPLC",
     "country_geonameid":4041468,
     "country_code":"MP",
     "country_rubriqueid":null,
-    "country_name":"Îles Mariannes du Nord",
+    "country_name":"ÃŽles Mariannes du Nord",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":3570675,
@@ -2382,7 +2382,7 @@
     "country_rubriqueid":1616686,
     "country_name":"Martinique",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":2377450,
@@ -2412,7 +2412,7 @@
     "country_rubriqueid":null,
     "country_name":"Montserrat",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":2562305,
@@ -2457,11 +2457,11 @@
     "country_rubriqueid":1666863,
     "country_name":"Mexique",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":1282027,
-    "libelle":"Malé",
+    "libelle":"MalÃ©",
     "latitude":4.1748,
     "longitude":73.50888,
     "population":103693,
@@ -2506,18 +2506,18 @@
   },
   {
     "geonameid":3703443,
-    "libelle":"Panamá",
+    "libelle":"PanamÃ¡",
     "latitude":8.9936,
     "longitude":-79.51973,
     "population":408168,
-    "place_path":"Panama>Panamá",
+    "place_path":"Panama>PanamÃ¡",
     "feature_code":"PPLC",
     "country_geonameid":3703430,
     "country_code":"PA",
     "country_rubriqueid":null,
     "country_name":"Panama",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3936456,
@@ -2525,14 +2525,14 @@
     "latitude":-12.04318,
     "longitude":-77.02824,
     "population":7737002,
-    "place_path":"Pérou>Provincia de Lima",
+    "place_path":"PÃ©rou>Provincia de Lima",
     "feature_code":"PPLC",
     "country_geonameid":3932488,
     "country_code":"PE",
     "country_rubriqueid":1728719,
-    "country_name":"Pérou",
+    "country_name":"PÃ©rou",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":3143244,
@@ -2540,12 +2540,12 @@
     "latitude":59.91273,
     "longitude":10.74609,
     "population":580000,
-    "place_path":"Norvège>Oslo County>Oslo",
+    "place_path":"NorvÃ¨ge>Oslo County>Oslo",
     "feature_code":"PPLC",
     "country_geonameid":3144096,
     "country_code":"NO",
     "country_rubriqueid":1667392,
-    "country_name":"Norvège",
+    "country_name":"NorvÃ¨ge",
     "continent_geonameid":6255148,
     "continent_name":"Europe"
   },
@@ -2555,14 +2555,14 @@
     "latitude":-17.53333,
     "longitude":-149.56667,
     "population":26357,
-    "place_path":"Polynésie Française>Îles du Vent",
+    "place_path":"PolynÃ©sie FranÃ§aise>ÃŽles du Vent",
     "feature_code":"PPLC",
     "country_geonameid":4030656,
     "country_code":"PF",
     "country_rubriqueid":null,
-    "country_name":"Polynésie Française",
+    "country_name":"PolynÃ©sie FranÃ§aise",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":2088122,
@@ -2570,14 +2570,14 @@
     "latitude":-9.44314,
     "longitude":147.17972,
     "population":283733,
-    "place_path":"Papouasie-Nouvelle Guinée>National Capital District",
+    "place_path":"Papouasie-Nouvelle GuinÃ©e>National Capital District",
     "feature_code":"PPLC",
     "country_geonameid":2088628,
     "country_code":"PG",
     "country_rubriqueid":null,
-    "country_name":"Papouasie-Nouvelle Guinée",
+    "country_name":"Papouasie-Nouvelle GuinÃ©e",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":1283240,
@@ -2585,12 +2585,12 @@
     "latitude":27.70169,
     "longitude":85.3206,
     "population":1442271,
-    "place_path":"Népal>Central Region>Bgmat Zone",
+    "place_path":"NÃ©pal>Central Region>Bgmat Zone",
     "feature_code":"PPLC",
     "country_geonameid":1282988,
     "country_code":"NP",
     "country_rubriqueid":1767026,
-    "country_name":"Népal",
+    "country_name":"NÃ©pal",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -2600,14 +2600,14 @@
     "latitude":-19.05952,
     "longitude":-169.91867,
     "population":624,
-    "place_path":"Nioué",
+    "place_path":"NiouÃ©",
     "feature_code":"PPLC",
     "country_geonameid":4036232,
     "country_code":"NU",
     "country_rubriqueid":null,
-    "country_name":"Nioué",
+    "country_name":"NiouÃ©",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":2179537,
@@ -2615,14 +2615,14 @@
     "latitude":-41.28664,
     "longitude":174.77557,
     "population":381900,
-    "place_path":"Nouvelle-Zélande>Wellington>Wellington City",
+    "place_path":"Nouvelle-ZÃ©lande>Wellington>Wellington City",
     "feature_code":"PPLC",
     "country_geonameid":2186224,
     "country_code":"NZ",
     "country_rubriqueid":null,
-    "country_name":"Nouvelle-Zélande",
+    "country_name":"Nouvelle-ZÃ©lande",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":1701668,
@@ -2652,7 +2652,7 @@
     "country_rubriqueid":null,
     "country_name":"Saint-Pierre et Miquelon",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":4030723,
@@ -2660,14 +2660,14 @@
     "latitude":-25.06597,
     "longitude":-130.10147,
     "population":46,
-    "place_path":"Îles Pitcairn",
+    "place_path":"ÃŽles Pitcairn",
     "feature_code":"PPLC",
     "country_geonameid":4030699,
     "country_code":"PN",
     "country_rubriqueid":null,
-    "country_name":"Îles Pitcairn",
+    "country_name":"ÃŽles Pitcairn",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":1176615,
@@ -2690,7 +2690,7 @@
     "latitude":52.22977,
     "longitude":21.01178,
     "population":1702139,
-    "place_path":"Pologne>Voïvodie de Mazovie>Warszawa",
+    "place_path":"Pologne>VoÃ¯vodie de Mazovie>Warszawa",
     "feature_code":"PPLC",
     "country_geonameid":798544,
     "country_code":"PL",
@@ -2705,14 +2705,14 @@
     "latitude":38.89511,
     "longitude":-77.03637,
     "population":601723,
-    "place_path":"États-Unis>Washington, D.C.",
+    "place_path":"Ã‰tats-Unis>Washington, D.C.",
     "feature_code":"PPLC",
     "country_geonameid":6252001,
     "country_code":"US",
     "country_rubriqueid":1666848,
-    "country_name":"États-Unis",
+    "country_name":"Ã‰tats-Unis",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":232422,
@@ -2765,14 +2765,14 @@
     "latitude":-9.43333,
     "longitude":159.95,
     "population":56298,
-    "place_path":"Îles Salomon>Guadalcanal",
+    "place_path":"ÃŽles Salomon>Guadalcanal",
     "feature_code":"PPLC",
     "country_geonameid":2103350,
     "country_code":"SB",
     "country_rubriqueid":null,
-    "country_name":"Îles Salomon",
+    "country_name":"ÃŽles Salomon",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":241131,
@@ -2847,7 +2847,7 @@
     "country_rubriqueid":null,
     "country_name":"Palaos",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":4568127,
@@ -2862,22 +2862,22 @@
     "country_rubriqueid":null,
     "country_name":"Porto Rico",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3439389,
-    "libelle":"Asunción",
+    "libelle":"AsunciÃ³n",
     "latitude":-25.30066,
     "longitude":-57.63591,
     "population":1482200,
-    "place_path":"Paraguay>Asunción",
+    "place_path":"Paraguay>AsunciÃ³n",
     "feature_code":"PPLC",
     "country_geonameid":3437598,
     "country_code":"PY",
     "country_rubriqueid":1724292,
     "country_name":"Paraguay",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":290030,
@@ -2900,12 +2900,12 @@
     "latitude":-20.88231,
     "longitude":55.4504,
     "population":137195,
-    "place_path":"Réunion>Réunion>Réunion",
+    "place_path":"RÃ©union>RÃ©union>RÃ©union",
     "feature_code":"PPLC",
     "country_geonameid":935317,
     "country_code":"RE",
     "country_rubriqueid":null,
-    "country_name":"Réunion",
+    "country_name":"RÃ©union",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
@@ -2926,22 +2926,22 @@
   },
   {
     "geonameid":1546102,
-    "libelle":"Port-aux-Français",
+    "libelle":"Port-aux-FranÃ§ais",
     "latitude":-49.35,
     "longitude":70.21667,
     "population":45,
-    "place_path":"Terres Australes et Antarctiques Françaises>Kerguelen",
+    "place_path":"Terres Australes et Antarctiques FranÃ§aises>Kerguelen",
     "feature_code":"PPLC",
     "country_geonameid":1546748,
     "country_code":"TF",
     "country_rubriqueid":null,
-    "country_name":"Terres Australes et Antarctiques Françaises",
+    "country_name":"Terres Australes et Antarctiques FranÃ§aises",
     "continent_geonameid":6255152,
     "continent_name":"Antartique"
   },
   {
     "geonameid":2365267,
-    "libelle":"Lomé",
+    "libelle":"LomÃ©",
     "latitude":6.13748,
     "longitude":1.21227,
     "population":749700,
@@ -2956,7 +2956,7 @@
   },
   {
     "geonameid":1221874,
-    "libelle":"Douchanbé",
+    "libelle":"DouchanbÃ©",
     "latitude":38.53575,
     "longitude":68.77905,
     "population":543107,
@@ -2975,14 +2975,14 @@
     "latitude":-8.55861,
     "longitude":125.57361,
     "population":150000,
-    "place_path":"Timor Oriental>Distrito Díli",
+    "place_path":"Timor Oriental>Distrito DÃ­li",
     "feature_code":"PPLC",
     "country_geonameid":1966436,
     "country_code":"TL",
     "country_rubriqueid":null,
     "country_name":"Timor Oriental",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":162183,
@@ -2990,12 +2990,12 @@
     "latitude":37.95,
     "longitude":58.38333,
     "population":727700,
-    "place_path":"Turkménistan>Ahal",
+    "place_path":"TurkmÃ©nistan>Ahal",
     "feature_code":"PPLC",
     "country_geonameid":1218197,
     "country_code":"TM",
     "country_rubriqueid":null,
-    "country_name":"Turkménistan",
+    "country_name":"TurkmÃ©nistan",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -3042,7 +3042,7 @@
     "country_rubriqueid":null,
     "country_name":"Tonga",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":3573890,
@@ -3057,7 +3057,7 @@
     "country_rubriqueid":null,
     "country_name":"Trinidad et Tobago",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":2110394,
@@ -3072,7 +3072,7 @@
     "country_rubriqueid":null,
     "country_name":"Tuvalu",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":1668341,
@@ -3080,12 +3080,12 @@
     "latitude":25.04776,
     "longitude":121.53185,
     "population":7871900,
-    "place_path":"Taïwan>Taipei",
+    "place_path":"TaÃ¯wan>Taipei",
     "feature_code":"PPLC",
     "country_geonameid":1668284,
     "country_code":"TW",
     "country_rubriqueid":1668135,
-    "country_name":"Taïwan",
+    "country_name":"TaÃ¯wan",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -3155,12 +3155,12 @@
     "latitude":13.75398,
     "longitude":100.50144,
     "population":5104476,
-    "place_path":"Thaïlande>Bangkok",
+    "place_path":"ThaÃ¯lande>Bangkok",
     "feature_code":"PPLC",
     "country_geonameid":1605651,
     "country_code":"TH",
     "country_rubriqueid":1668149,
-    "country_name":"Thaïlande",
+    "country_name":"ThaÃ¯lande",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -3170,12 +3170,12 @@
     "latitude":14.6937,
     "longitude":-17.44406,
     "population":2476400,
-    "place_path":"Sénégal>Dakar",
+    "place_path":"SÃ©nÃ©gal>Dakar",
     "feature_code":"PPLC",
     "country_geonameid":2245662,
     "country_code":"SN",
     "country_rubriqueid":1656801,
-    "country_name":"Sénégal",
+    "country_name":"SÃ©nÃ©gal",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
@@ -3207,7 +3207,7 @@
     "country_rubriqueid":null,
     "country_name":"Surinam",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":373303,
@@ -3226,16 +3226,16 @@
   },
   {
     "geonameid":2410763,
-    "libelle":"São Tomé",
+    "libelle":"SÃ£o TomÃ©",
     "latitude":0.33654,
     "longitude":6.72732,
     "population":53300,
-    "place_path":"São Tomé-et-Príncipe>São Tomé Island",
+    "place_path":"SÃ£o TomÃ©-et-PrÃ­ncipe>SÃ£o TomÃ© Island",
     "feature_code":"PPLC",
     "country_geonameid":2410758,
     "country_code":"ST",
     "country_rubriqueid":null,
-    "country_name":"São Tomé-et-Príncipe",
+    "country_name":"SÃ£o TomÃ©-et-PrÃ­ncipe",
     "continent_geonameid":6255146,
     "continent_name":"Afrique"
   },
@@ -3252,7 +3252,7 @@
     "country_rubriqueid":null,
     "country_name":"Salvador",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":3513392,
@@ -3267,7 +3267,7 @@
     "country_rubriqueid":null,
     "country_name":"Saint-Martin",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":323786,
@@ -3320,14 +3320,14 @@
     "latitude":21.46122,
     "longitude":-71.14188,
     "population":3720,
-    "place_path":"Îles Turques-et-Caïques",
+    "place_path":"ÃŽles Turques-et-CaÃ¯ques",
     "feature_code":"PPLC",
     "country_geonameid":3576916,
     "country_code":"TC",
     "country_rubriqueid":null,
-    "country_name":"Îles Turques-et-Caïques",
+    "country_name":"ÃŽles Turques-et-CaÃ¯ques",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":2427123,
@@ -3335,7 +3335,7 @@
     "latitude":12.10672,
     "longitude":15.0444,
     "population":721081,
-    "place_path":"Tchad>Région du Chari-Baguirmi",
+    "place_path":"Tchad>RÃ©gion du Chari-Baguirmi",
     "feature_code":"PPLC",
     "country_geonameid":2434508,
     "country_code":"TD",
@@ -3357,7 +3357,7 @@
     "country_rubriqueid":1763106,
     "country_name":"Uruguay",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   },
   {
     "geonameid":3577430,
@@ -3365,14 +3365,14 @@
     "latitude":18.41667,
     "longitude":-64.61667,
     "population":8449,
-    "place_path":"Îles Vierges",
+    "place_path":"ÃŽles Vierges",
     "feature_code":"PPLC",
     "country_geonameid":3577718,
     "country_code":"VG",
     "country_rubriqueid":null,
-    "country_name":"Îles Vierges",
+    "country_name":"ÃŽles Vierges",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":4795467,
@@ -3380,18 +3380,18 @@
     "latitude":18.3419,
     "longitude":-64.9307,
     "population":20000,
-    "place_path":"Îles Vierges des États-Unis>Saint Thomas Island",
+    "place_path":"ÃŽles Vierges des Ã‰tats-Unis>Saint Thomas Island",
     "feature_code":"PPLC",
     "country_geonameid":4796775,
     "country_code":"VI",
     "country_rubriqueid":null,
-    "country_name":"Îles Vierges des États-Unis",
+    "country_name":"ÃŽles Vierges des Ã‰tats-Unis",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":1581130,
-    "libelle":"Hanoï",
+    "libelle":"HanoÃ¯",
     "latitude":21.0245,
     "longitude":105.84117,
     "population":1431270,
@@ -3417,7 +3417,7 @@
     "country_rubriqueid":null,
     "country_name":"Vanuatu",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":4034821,
@@ -3425,14 +3425,14 @@
     "latitude":-13.28163,
     "longitude":-176.17453,
     "population":1200,
-    "place_path":"Wallis-et-Futuna>Circonscription d'Uvéa",
+    "place_path":"Wallis-et-Futuna>Circonscription d'UvÃ©a",
     "feature_code":"PPLC",
     "country_geonameid":4034749,
     "country_code":"WF",
     "country_rubriqueid":null,
     "country_name":"Wallis-et-Futuna",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":4035413,
@@ -3447,7 +3447,7 @@
     "country_rubriqueid":null,
     "country_name":"Samoa",
     "continent_geonameid":6255151,
-    "continent_name":"Océanie"
+    "continent_name":"OcÃ©anie"
   },
   {
     "geonameid":786714,
@@ -3455,7 +3455,7 @@
     "latitude":42.67272,
     "longitude":21.16688,
     "population":550000,
-    "place_path":"Kosovo>Komuna e Prishtinës",
+    "place_path":"Kosovo>Komuna e PrishtinÃ«s",
     "feature_code":"PPLC",
     "country_geonameid":831053,
     "country_code":"XK",
@@ -3485,12 +3485,12 @@
     "latitude":15.35472,
     "longitude":44.20667,
     "population":1937451,
-    "place_path":"Yémen>Amanat Al Asimah>Old City",
+    "place_path":"YÃ©men>Amanat Al Asimah>Old City",
     "feature_code":"PPLC",
     "country_geonameid":69543,
     "country_code":"YE",
     "country_rubriqueid":1667193,
-    "country_name":"Yémen",
+    "country_name":"YÃ©men",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -3515,12 +3515,12 @@
     "latitude":41.26465,
     "longitude":69.21627,
     "population":1978028,
-    "place_path":"Ouzbékistan>Toshkent Shahri",
+    "place_path":"OuzbÃ©kistan>Toshkent Shahri",
     "feature_code":"PPLC",
     "country_geonameid":1512440,
     "country_code":"UZ",
     "country_rubriqueid":null,
-    "country_name":"Ouzbékistan",
+    "country_name":"OuzbÃ©kistan",
     "continent_geonameid":6255147,
     "continent_name":"Asie"
   },
@@ -3552,7 +3552,7 @@
     "country_rubriqueid":null,
     "country_name":"Saint-Vincent-et-les Grenadines",
     "continent_geonameid":6255149,
-    "continent_name":"Amérique du Nord"
+    "continent_name":"AmÃ©rique du Nord"
   },
   {
     "geonameid":909137,
@@ -3597,6 +3597,6 @@
     "country_rubriqueid":1667235,
     "country_name":"Venezuela",
     "continent_geonameid":6255150,
-    "continent_name":"Amérique du Sud"
+    "continent_name":"AmÃ©rique du Sud"
   }
 ]
