@@ -11,11 +11,14 @@
 #import "GameController.h"
 #import "JoinViewController.h"
 
+#import <MapKit/MapKit.h>
+
 @interface MapViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *questionTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *questionTextLabel;
 @property (weak, nonatomic) IBOutlet UILabel *questionCongratsLabel;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
@@ -50,7 +53,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    [self resetMapRegionAnimated:NO];
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -135,6 +139,8 @@
     self.questionTitleLabel.text = questionTitle;
     self.questionTextLabel.text = questionText;
     self.questionCongratsLabel.text = nil;
+    
+    [self resetMapRegionAnimated:YES];
 }
 
 - (void) showResults
@@ -144,6 +150,17 @@
     self.questionTitleLabel.text = questionTitle;
     self.questionTextLabel.text = questionText;
     self.questionCongratsLabel.text = @"Bravo";
+}
+
+- (void) resetMapRegionAnimated:(BOOL)animated
+{
+    //make the map display the whole world
+    MKCoordinateRegion worldRegion;
+    worldRegion.center.latitude = 48.856578;
+    worldRegion.center.longitude = 2.351828;
+    worldRegion.span.latitudeDelta = 180;
+    worldRegion.span.longitudeDelta = 360;
+    [self.mapView setRegion:worldRegion animated:animated];
 }
 
 @end
