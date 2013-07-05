@@ -9,15 +9,15 @@ window.angular.module('timer', [])
           interval;
 
         var progress = new window.CircularProgress({
-          radius: 50,
+          radius: 30,
           strokeStyle: '#3f6067',
-          lineWidth: 14,
+          lineWidth: 10,
           initial: {
             strokeStyle: '#eee5de',
-            lineWidth: 14
+            lineWidth: 10
           },
           text: {
-            font: 'bold 25px verdana',
+            font: 'bold 20px verdana',
             fillStyle: '#3f6067'
           }
         });
