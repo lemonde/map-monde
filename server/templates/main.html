@@ -33,11 +33,14 @@
       <header>
         <div class="message" ng-show="! waiting">
           <div class="timer" timer></div>
-          <p class="head">Question :</p>
+          <p class="head">
+            <span ng-show="question && ! result">Question :</span>
+            <span ng-show="question && result">Réponse à la question :</span>
+          </p>
           <p class="lbl">{{question.question}}</p>
         </div>
         <div class="waiting" ng-show="waiting">
-          Waiting...
+          Veuillez patienter, la partie va commencer...
         </div>
       </header>
       <map ng-show="! waiting"></map>

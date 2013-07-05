@@ -23,6 +23,7 @@ app.controller('mapMondeCtrl', function ($scope) {
   socket.on('question', function (question) {
     console.log('receive "question"', question);
     $scope.question = question;
+    $scope.result = null;
     startTimer(question.time);
     $scope.$apply();
   });
