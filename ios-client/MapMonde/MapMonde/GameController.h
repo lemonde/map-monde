@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import <CoreLocation/CoreLocation.h>
+#import "GameLocation.h"
 
 extern NSString* GameControllerErrorNotification;
 
@@ -33,10 +33,10 @@ typedef enum {
 //getting information about the current game
 @property (nonatomic, readonly) NSString* question;
 @property (nonatomic, readonly)	NSInteger questionIdentifier;
-- (void) answerQuestion:(CLLocationCoordinate2D)answer;
+- (void) answerQuestion:(GameLocation*)answer;
 
 //getting the scores of the previous question
 @property (nonatomic, readonly) NSArray* results;
-@property (nonatomic, readonly) CLLocationCoordinate2D correctAnswer;
+@property (nonatomic, readonly) GameLocation* correctAnswer;
 
 @end

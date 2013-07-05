@@ -25,10 +25,10 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
 @property (nonatomic, strong)		NSString* nickname;
 @property (nonatomic, strong)		NSString* question;
 @property (nonatomic)				NSInteger questionIdentifier;
-@property (nonatomic)				CLLocationCoordinate2D answer;
+@property (nonatomic)				GameLocation* answer;
 
 @property (nonatomic, strong) 		NSArray* results;
-@property (nonatomic, readwrite) 	CLLocationCoordinate2D correctAnswer;
+@property (nonatomic, readwrite) 	GameLocation* correctAnswer;
 
 
 @end
@@ -96,7 +96,7 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
 //**************************************************************************
 #pragma mark - answering
 
-- (void) answerQuestion:(CLLocationCoordinate2D)answer;
+- (void) answerQuestion:(GameLocation*)answer;
 {
     if (self.currentState != GameStateQuestionInProgress)
         return;
@@ -120,7 +120,7 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
 
 - (void) sendAnswerEvent
 {
-    NSDictionary* answerArguments = @{@"answer":[self jsonFromLocationCoordinates:self.answer],
+    NSDictionary* answerArguments = @{@"answer":[self.answer JSONSerialization],
                                       @"questionId":@(self.questionIdentifier)};
     [_gameSocket sendEvent:@"answer" withData:answerArguments];
 }
@@ -151,11 +151,8 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
     self.questionIdentifier = [data[@"id"] integerValue];
     
     //reset answer related properties
-    CLLocationCoordinate2D location;
-    location.latitude = 0;
-    location.longitude = 0;
-    self.answer = location;
-    self.correctAnswer = location;
+    self.answer = nil;
+    self.correctAnswer = nil;
     self.results = nil;
     
     self.currentState = GameStateQuestionInProgress;
@@ -176,7 +173,7 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
     if (!data[@"solve"])
         return;
     
-    CLLocationCoordinate2D answer = [self locationCoordinatesFromJSON:data[@"answer"]];
+    GameLocation* answer = [GameLocation gameLocationWithJSON:data[@"answer"]];
     
     
     self.correctAnswer = answer;
@@ -238,26 +235,6 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
             break;
         }
     }
-}
-
-//**************************************************************************
-#pragma mark - CLLocation helpers
-
-- (NSDictionary*) jsonFromLocationCoordinates:(CLLocationCoordinate2D)location
-{
-    return @{@"lat": @(location.latitude), @"long": @(location.longitude)};
-}
-
-- (CLLocationCoordinate2D) locationCoordinatesFromJSON:(id)json
-{
-    CLLocationCoordinate2D location;
-    location.latitude = 0;
-    location.longitude = 0;
-    if ([json isKindOfClass:[NSDictionary class]] && [json[@"lat"] isKindOfClass:[NSNumber class]] && [json[@"long"] isKindOfClass:[NSNumber class]]) {
-        location.latitude = [json[@"lat"] doubleValue];
-        location.longitude = [json[@"long"] doubleValue];
-    }
-    return location;
 }
 
 

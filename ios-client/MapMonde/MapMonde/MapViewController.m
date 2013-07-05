@@ -174,7 +174,7 @@
 {
     CLLocationCoordinate2D answer = [self.mapView convertPoint:[gestureRecognizer locationInView:self.mapView] toCoordinateFromView:self.mapView];
     
-    [[GameController sharedInstance] answerQuestion:answer];
+    [[GameController sharedInstance] answerQuestion:[GameLocation gameLocationWithCoordinate:answer]];
 }
 
 
