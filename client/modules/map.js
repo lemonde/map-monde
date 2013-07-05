@@ -16,11 +16,7 @@ app.directive('map', function () {
     template: template,
     controller: 'MapCtrl',
     link: function ($scope, $element, $attrs) {
-      /*$($element).css({
-        width: '600px',
-        height: '400px'
-      });
-      */
+
       $($element).find('#map').css({
         width: '600px',
         height: '400px'
@@ -52,7 +48,7 @@ app.directive('map', function () {
       }
 
       function resetReponseJoueur(){
-        if(reponse_joueur !== null){ 
+        if(reponse_joueur !== null){
           map.removeLayer(reponse_joueur);
           reponse_joueur = null;
         }

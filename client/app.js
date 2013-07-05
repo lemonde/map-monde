@@ -1,16 +1,32 @@
 'use strict';
 
 var app = angular.module('mapMonde', []);
-
-var user = {nickname: 'Robert', logged: false};
+var socket = io.connect('http://localhost');
 
 app.controller('mapMondeCtrl', function ($scope) {
 
-  $scope.user = user;
+  // Check join response
+  socket.on("join-status", function (error) {
+    if (error === false) {
+      $scope.error = true;
+    }
+    else {
+      $scope.user.logged = true;
+      $scope.$apply();
+    }
+  });
+
+  $scope.user = {nickname: '', logged: false};
 
   $scope.login = function () {
 
-    $scope.user.logged = true;
+    if($scope.user.nickname !== '') {
+
+      socket.emit("join", {
+        nickname: $scope.user.nickname
+      });
+
+    }
 
   }
 
