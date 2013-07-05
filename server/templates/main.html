@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mapMonde">
 <head>
   <meta charset="utf-8">
   <base href="/"/>
@@ -10,9 +10,16 @@
 
 </head>
 
-<body ng-app="mapMonde">
+<body ng-controller="mapMondeCtrl">
 
-  <map></map>
+  <div ng-show="!user.logged">
+    <form>
+      <input type="text" ng-model="user.nickname" required>
+      <button type="submit" ng-click="login()">Join</button>
+    </form>
+  </div>
+
+  <map ng-show="user.logged">Cache</map>
 
   <script src="/socket.io/socket.io.js"></script>
   <script>
@@ -30,6 +37,7 @@
   <script src="/bower_components/angular/angular.js"></script>
 
   <script src="/app.js"></script>
+  <script src="/modules/login.js"></script>
   <script src="/modules/map.js"></script>
 
 </body>

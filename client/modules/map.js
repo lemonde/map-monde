@@ -12,11 +12,6 @@ app.directive('map', function () {
   return {
     restrict: 'E',
     replace: true,
-    scope: {
-        selected: '=',
-        items: '=',
-        onselect: '='
-    },
     transclude: true,
     template: template,
     controller: 'MapCtrl',
