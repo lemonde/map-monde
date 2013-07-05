@@ -71,6 +71,6 @@ module.exports = function (server) {
 
       return 1 / d;
     },
-    pauseTime: 3
+    pauseTime: 8
   });
 };
