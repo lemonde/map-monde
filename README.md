@@ -1,6 +1,6 @@
 # map-monde
 
-Amazing quiz game by THE WIN TEAM.
+Amazing quiz game by THE WIN TEAM (Mr A, Mr G, Mr JH, Mr L)
 
 ## Start server
 

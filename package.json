@@ -16,7 +16,8 @@
     "url": "https://github.com/lemonde/hackaton-win-team/issues"
   },
   "dependencies": {
-    "express": "~3.3.3"
+    "express": "~3.3.3",
+    "socket.io": "~0.9.16"
   },
   "devDependencies": {
     "grunt-contrib-watch": "~0.4.4",

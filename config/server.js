@@ -2,6 +2,7 @@
 
 var express = require('express'),
     app = express(),
+    server = require('http').createServer(app),
     path = require('path'),
     base = path.resolve(__dirname + '/..');
 
@@ -17,7 +18,6 @@ app.configure(function() {
 });
 
 app.configure('development', function () {
-  app.use(express.logger());
   app.use(express.static(base + '/client'));
   app.use('/assets/font', express.static(base + '/bower_components/font-awesome/font'));
 });
@@ -25,6 +25,12 @@ app.configure('development', function () {
 app.configure(function () {
   // routes
   require('./routes')(app);
+  // socket
+  require('./socket')(server);
 });
 
-module.exports = app;
+exports = module.exports = server;
+
+exports.use = function() {
+  app.use.apply(app, arguments);
+};
