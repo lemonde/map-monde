@@ -1,0 +1,19 @@
+{
+  "name": "hackaton-win-team",
+  "version": "0.0.0",
+  "description": "Amazing quiz game.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lemonde/hackaton-win-team.git"
+  },
+  "keywords": [
+    "game",
+    "quiz"
+  ],
+  "author": "Win Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lemonde/hackaton-win-team/issues"
+  }
+}
