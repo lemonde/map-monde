@@ -15,14 +15,14 @@
 
   <div id="logo"></div>
 
-  <div id="login" ng-show="user.logged">
+  <div id="login" ng-show="!user.logged">
     <form>
       <input type="text" ng-model="user.nickname" placeholder="Pseudo" required>
       <a class="btn btn-block btn-primary btn-large" ng-click="login()">Join</a>
     </form>
   </div>
 
-  <div id="game" ng-show="!user.logged">
+  <div id="game" ng-show="user.logged">
     <div>
       <div class="message">
         <p>Question :</p>

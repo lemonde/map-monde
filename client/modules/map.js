@@ -14,11 +14,6 @@ app.directive('map', function () {
     template: template,
     controller: 'MapCtrl',
     link: function ($scope, $element, $attrs) {
-      $($element).find('#map').css({
-        width: '600px',
-        height: '400px'
-      });
-
 
       var map = L.map('map').setView([29.91685, -1.14258], 3);
       //var tile_url = 'http://{s}.tiles.mapbox.com/v3/lemonde.map-fr-labels/{z}/{x}/{y}.png';
@@ -50,15 +45,15 @@ app.directive('map', function () {
       }
 
       function resetReponses(){
-        if(reponse_joueur !== null){ 
+        if(reponse_joueur !== null){
           map.removeLayer(reponse_joueur);
           reponse_joueur = null;
         }
-        if(reponse_correcte !== null){ 
+        if(reponse_correcte !== null){
           map.removeLayer(reponse_correcte);
           reponse_correcte = null;
         }
-        if(chemin !== null){ 
+        if(chemin !== null){
           map.removeLayer(chemin);
           chemin = null;
         }
@@ -110,7 +105,7 @@ app.directive('map', function () {
 
       function validerReponseJoueur(){
         if(reponse_joueur !== null){
-          var reponse = reponse_joueur.getLatLng(); 
+          var reponse = reponse_joueur.getLatLng();
           //alert(reponse);
           afficherReponseCorrecte();
         }
