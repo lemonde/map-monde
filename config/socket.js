@@ -1,4 +1,6 @@
-var socketIO = require('socket.io');
+var socketIO = require('socket.io'),
+    _ = require('lodash'),
+    capitales = require('../data/liste_capitale.json');
 
 module.exports = function (server) {
 
@@ -11,6 +13,19 @@ module.exports = function (server) {
   require('../server/game')({
     io: socketIO.listen(server),
     questionProvider: function (cb) {
+
+      var questions = _.map(capitales, function (capitale, key) {
+        return {
+          id: key + 1,
+          question: 'Où se trouve ' + capitale.libelle + ' ?',
+          solve: {
+            lat: capitale.latitude,
+            long: capitale.longitude
+          },
+          time: 10
+        };
+      });
+      /*
       var questions = [
         {
           id: 1,
@@ -39,7 +54,7 @@ module.exports = function (server) {
           },
           time: 10
         }
-      ];
+      ];*/
 
       cb(questions[Math.floor(Math.random()*questions.length)]);
     },
