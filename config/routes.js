@@ -2,7 +2,7 @@
 
 module.exports = function (app) {
   // Only one route
-  app.use(function (req, res) {
+  app.get('/', function (req, res) {
     return res.render('templates/main');
   });
 };
