@@ -33,6 +33,7 @@
 		3F19629617870F4C00C8A059 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F19629417870F4C00C8A059 /* MapViewController.m */; };
 		3F19629717870F4C00C8A059 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F19629517870F4C00C8A059 /* MapViewController.xib */; };
 		3F19629917870F6C00C8A059 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F19629817870F6C00C8A059 /* MapKit.framework */; };
+		3F19629B1787204A00C8A059 /* MapViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F19629A1787204A00C8A059 /* MapViewController~ipad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		3F19629417870F4C00C8A059 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		3F19629517870F4C00C8A059 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		3F19629817870F6C00C8A059 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3F19629A1787204A00C8A059 /* MapViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MapViewController~ipad.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				3F19629317870F4C00C8A059 /* MapViewController.h */,
 				3F19629417870F4C00C8A059 /* MapViewController.m */,
 				3F19629517870F4C00C8A059 /* MapViewController.xib */,
+				3F19629A1787204A00C8A059 /* MapViewController~ipad.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				3F195C5F1786CA3900C8A059 /* Default-568h@2x.png in Resources */,
 				3F19629217870D2F00C8A059 /* JoinViewController.xib in Resources */,
 				3F19629717870F4C00C8A059 /* MapViewController.xib in Resources */,
+				3F19629B1787204A00C8A059 /* MapViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

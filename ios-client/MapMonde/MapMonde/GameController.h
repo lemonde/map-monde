@@ -32,6 +32,7 @@ typedef enum {
 
 //getting information about the current game
 @property (nonatomic, readonly) NSString* question;
+@property (nonatomic, readonly)	NSInteger questionIdentifier;
 - (void) answerQuestion:(CLLocationCoordinate2D)answer;
 
 //getting the scores of the previous question

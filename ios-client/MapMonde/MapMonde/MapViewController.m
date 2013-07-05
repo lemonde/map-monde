@@ -13,6 +13,10 @@
 
 @interface MapViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *questionTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *questionTextLabel;
+@property (weak, nonatomic) IBOutlet UILabel *questionCongratsLabel;
+
 @end
 
 @implementation MapViewController
@@ -84,14 +88,19 @@
             return; }
         case GameStateWaitingForQuestion: {
             [self hideJoinViewController];
+            [self showResults];
             return; }
         case GameStateQuestionInProgress: {
             [self hideJoinViewController];
+            [self showQuestion];
             return; }
         default:
             break;
     }
 }
+
+//**************************************************************************
+#pragma mark - navigation
 
 - (void) showJoinViewController
 {
@@ -116,5 +125,25 @@
 }
 
 
+//**************************************************************************
+#pragma mark - game layout
+
+- (void) showQuestion
+{
+    NSString* questionTitle = [NSString stringWithFormat:@"QUESTION %d :", [[GameController sharedInstance] questionIdentifier]];
+    NSString* questionText = [[GameController sharedInstance] question];
+    self.questionTitleLabel.text = questionTitle;
+    self.questionTextLabel.text = questionText;
+    self.questionCongratsLabel.text = nil;
+}
+
+- (void) showResults
+{
+    NSString* questionTitle = [NSString stringWithFormat:@"RÉPONSE QUESTION %d :", [[GameController sharedInstance] questionIdentifier]];
+    NSString* questionText = @"Hello";
+    self.questionTitleLabel.text = questionTitle;
+    self.questionTextLabel.text = questionText;
+    self.questionCongratsLabel.text = @"Bravo";
+}
 
 @end

@@ -165,14 +165,14 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
     if (!self.currentState == GameStateQuestionInProgress)
         return;
     
-    if ([data[@"questionId"] isKindOfClass:[NSNumber class]])
+    if (![data[@"questionId"] isKindOfClass:[NSNumber class]])
         return;
     
     NSInteger questionId = [data[@"questionId"] integerValue];
     if (questionId != self.questionIdentifier)
         return;
     
-    if (!data[@"answer"])
+    if (!data[@"solve"])
         return;
     
     CLLocationCoordinate2D answer = [self locationCoordinatesFromJSON:data[@"answer"]];
