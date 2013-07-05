@@ -40,8 +40,10 @@ client.emit("answer", {
 
 server.emit("result", {
   questionId: 1,
-  lat: 10,
-  long: 10,
+  solve: {
+    lat: 10,
+    long: 10
+  },
   ranks: [
     {nickname: "Greg", score: 10},
     {nickname: "Ludow", score: 5},
@@ -72,8 +74,9 @@ server.emit("result", {
 #### result
 
 * `int` `questionId`: Question ID
-* `float` `lat`: Latitude
-* `float` `long`: Longitude
+* `object` `solve`: Solve
+  * `float` `lat`: Latitude
+  * `float` `long`: Longitude
 * `array` `ranking`: Scores of the last question.
   * `string` `nickname`: User name
   * `int` `score`: Score
