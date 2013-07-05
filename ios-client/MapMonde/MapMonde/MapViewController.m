@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *questionCongratsLabel;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
+@property (strong, nonatomic) GameLocation* answer;
+
 @end
 
 @implementation MapViewController
@@ -36,6 +38,7 @@
                                           forKeyPath:@"currentState"
                                              options:0
                                              context: (__bridge void*)[self class]];
+        self.answer = [GameLocation new];
     }
     return self;
 }
@@ -97,10 +100,12 @@
         case GameStateWaitingForQuestion: {
             [self hideJoinViewController];
             [self showResults];
+            [self showCorrectAnswer];
             return; }
         case GameStateQuestionInProgress: {
             [self hideJoinViewController];
             [self showQuestion];
+            [self resetMap];
             return; }
         default:
             break;
@@ -144,7 +149,6 @@
     self.questionTextLabel.text = questionText;
     self.questionCongratsLabel.text = nil;
     
-    [self resetMapRegionAnimated:YES];
 }
 
 - (void) showResults
@@ -167,15 +171,40 @@
     [self.mapView setRegion:worldRegion animated:animated];
 }
 
+- (void) showAnswer
+{
+    [self.mapView removeAnnotation:self.answer];
+    [self.mapView addAnnotation:self.answer];
+}
+
+- (void) showCorrectAnswer
+{
+    if (![[GameController sharedInstance] correctAnswer])
+        return;
+    
+    [self.mapView addAnnotation:[[GameController sharedInstance] correctAnswer]];
+}
+
+- (void) resetMap
+{
+    [self resetMapRegionAnimated:YES];
+    [self.mapView removeAnnotations:self.mapView.annotations];
+}
+
 //**************************************************************************
 #pragma mark - actions
 
 - (IBAction)handleMapTap:(UITapGestureRecognizer*)gestureRecognizer
 {
-    CLLocationCoordinate2D answer = [self.mapView convertPoint:[gestureRecognizer locationInView:self.mapView] toCoordinateFromView:self.mapView];
+    //do nothing if the current game state is not a question
+    if ([[GameController sharedInstance] currentState] != GameStateQuestionInProgress)
+        return;
     
-    [[GameController sharedInstance] answerQuestion:[GameLocation gameLocationWithCoordinate:answer]];
+    self.answer.coordinate = [self.mapView convertPoint:[gestureRecognizer locationInView:self.mapView] toCoordinateFromView:self.mapView];
+    [[GameController sharedInstance] answerQuestion:self.answer];
+    
+    //display on the map
+    [self showAnswer];
 }
-
 
 @end

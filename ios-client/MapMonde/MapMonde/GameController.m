@@ -173,7 +173,7 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
     if (!data[@"solve"])
         return;
     
-    GameLocation* answer = [GameLocation gameLocationWithJSON:data[@"answer"]];
+    GameLocation* answer = [GameLocation gameLocationWithJSON:data[@"solve"]];
     
     
     self.correctAnswer = answer;
