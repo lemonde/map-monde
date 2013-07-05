@@ -1,6 +1,6 @@
-# hackathon-win-team
+# map-monde
 
-Amazing quiz game !
+Amazing quiz game by THE WIN TEAM.
 
 ## Start server
 
