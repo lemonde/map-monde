@@ -8,17 +8,9 @@
 
 #import "AppDelegate.h"
 
-#import "SocketIO.h"
-
-@interface AppDelegate () <SocketIODelegate>
-
-@end
-
+#import "GameController.h"
 
 @implementation AppDelegate
-{
-    SocketIO* _socket;
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -27,9 +19,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    _socket = [[SocketIO alloc] initWithDelegate:self];
-    [_socket connectToHost:@"172.30.1.55" onPort:2828];
-    
+    [[GameController sharedInstance] joinGameWithNickname:@"amadour"];
     return YES;
 }
 
@@ -58,38 +48,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
-//**************************************************************************
-#pragma mark - SocketIODelegate
-
-- (void) socketIODidConnect:(SocketIO *)socket
-{
-    NSLog(@"socketIODidConnect");
-}
-- (void) socketIODidDisconnect:(SocketIO *)socket disconnectedWithError:(NSError *)error
-{
-    NSLog(@"socketIODidDisconnect");
-}
-- (void) socketIO:(SocketIO *)socket didReceiveMessage:(SocketIOPacket *)packet
-{
-    NSLog(@"didReceiveMessage");
-}
-- (void) socketIO:(SocketIO *)socket didReceiveJSON:(SocketIOPacket *)packet
-{
-    NSLog(@"didReceiveJSON");
-}
-- (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet
-{
-    NSLog(@"didReceiveEvent");
-}
-- (void) socketIO:(SocketIO *)socket didSendMessage:(SocketIOPacket *)packet
-{
-    NSLog(@"didSendMessage");
-}
-- (void) socketIO:(SocketIO *)socket onError:(NSError *)error
-{
-    NSLog(@"onError");
 }
 
 @end
