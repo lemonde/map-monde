@@ -88,9 +88,15 @@ Game.prototype = {
       if (! this.currentQuestion || this.currentQuestion.id !== data.questionId)
         return ;
 
+      for (var i = this.answers.length - 1; i >= 0; i--) {
+        if (this.answers[i].userId === userId)
+          this.answers.splice(i, 1);
+      }
+
       this.answers.push(_.extend(data, {
         userId: userId
       }));
+
     }.bind(this));
   },
 
