@@ -13,32 +13,23 @@
 
 <body ng-controller="mapMondeCtrl">
 
-  <div ng-show="!user.logged">
+  <div id="login" ng-show="!user.logged">
     <form>
       <input type="text" ng-model="user.nickname" required>
       <button type="submit" ng-click="login()">Join</button>
     </form>
   </div>
 
-  <map ng-show="user.logged">Cache</map>
-
-  <script src="/socket.io/socket.io.js"></script>
-  <script>
-    var socket = io.connect('http://localhost');
-    socket.on('news', function (data) {
-      console.log(data);
-      socket.emit('my other event', { my: 'data' });
-    });
-  </script>
+  <map ng-show="user.logged"></map>
 
   <script src="/bower_components/less.js/dist/less-1.4.0.js"></script>
   <script src="/bower_components/jquery/jquery.js"></script>
   <script src="/bower_components/leaflet/dist/leaflet.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
 
   <script src="/bower_components/angular/angular.js"></script>
 
   <script src="/app.js"></script>
-  <script src="/modules/login.js"></script>
   <script src="/modules/map.js"></script>
 
 </body>

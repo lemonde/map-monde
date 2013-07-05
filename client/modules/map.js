@@ -4,8 +4,6 @@ var template = '<div id="map_container"><div id="map"></div>   <span id="reset">
 
 function MapCtrl ($scope) {
 
-  $scope.vars = "toto";
-
 }
 
 app.directive('map', function () {
@@ -16,16 +14,7 @@ app.directive('map', function () {
     template: template,
     controller: 'MapCtrl',
     link: function ($scope, $element, $attrs) {
-      /*$($element).find('#map_container').css({
-        position:'absolute'
-        bottom: '0',
-        left: '0'
-        right: '0'
-        top: '0'
-      });
-      */
       $($element).find('#map').css({
-        //position:'relative'
         width: '600px',
         height: '400px'
       });
