@@ -1,27 +1,74 @@
 #game {
   width: 1170px;
-  margin: 200px auto 0;
+  margin: 160px auto 0;
   display: table;
 }
 
-#game aside {
-  width: 223px;
-  display: table-cell;
-}
-
-#game content {
-  border: 1px solid red;
-  background: red;
-  width: 945px;
-  height:100%;
-  display: table-cell;
+#game .content {
+  width: 966px;
 }
 
 #game header {
+  padding:10px 20px 10px 10px;
+  background: white url(/assets/img/decor.png) no-repeat top right;
+  width: 936px;
+}
+
+#game header .question {
+  color: #3f6067;
+  font-size: 22px;
+}
+
+#game header .head {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  color: #747b83;
+}
+
+#game map, #map {
+  border: 1px solid white;
+  display:block;
+  width: 944px;
+  height: 519px;
+}
+
+#game aside {
+  float: right;
+  width: 202px;
+  background: white url(/assets/img/globe.png) no-repeat center top;
+  margin-top: 60px;
+  padding-top: 100px;
+  display: table-cell;
+}
+
+#game aside p {
+  background: #3f6167;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  margin: 0;
+}
+
+#game aside ul {
+  margin:0;
+  padding:0;
+  list-style: none;
   background: white;
 }
 
-#map {
-  width: 944px;
-  height: 519px;
+#game aside li {
+  background: url(/assets/img/user.png) no-repeat 3px 8px;
+  height:50px;
+  padding: 0 10px 0 35px;
+  line-height: 50px;
+  border-bottom: 1px solid #e9edf0;
+}
+
+.world #game {
+  opacity: 0;
+}
+
+#game .timer {
+  float: right;
 }

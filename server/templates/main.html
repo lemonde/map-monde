@@ -11,7 +11,7 @@
 
 </head>
 
-<body ng-controller="mapMondeCtrl">
+<body ng-controller="mapMondeCtrl" ng-class="{'world': !user.logged}">
 
   <div id="logo"></div>
 
@@ -22,26 +22,29 @@
     </form>
   </div>
 
-  <div id="waiting" ng-show="user.logged && waiting">
-  Waiting..
-  </div>
-
-  <div id="game" ng-show="user.logged && ! waiting">
-    <content ng-show="question">
-      <header>
-        <div class="message">
-          <p>Question :</p>
-          <p>{{question.question}}</p>
-        </div>
-      </header>
-      <map ng-show="question"></map>
-    </content>
-    <aside ng-show="result">
+  <div id="game">
+    <aside ng-show="! waiting && result">
       <p>Classement</p>
       <ul>
-        <li ng-repeat="rank in result.ranking">{{rank.nickname}}</li>
+        <li ng-repeat="rank in result.ranking">{{rank.nickname}} - {{rank.score}}</li>
       </ul>
     </aside>
+    <content>
+      <header>
+        <div class="message" ng-show="! waiting">
+          <div class="timer" timer></div>
+          <p class="head">
+            <span ng-show="question && ! result">Question :</span>
+            <span ng-show="question && result">Réponse à la question :</span>
+          </p>
+          <p class="lbl">{{question.question}}</p>
+        </div>
+        <div class="waiting" ng-show="waiting">
+          Veuillez patienter, la partie va commencer...
+        </div>
+      </header>
+      <map ng-show="! waiting"></map>
+    </content>
   </div>
 
   <script src="/bower_components/less.js/dist/less-1.4.0.js"></script>
@@ -50,9 +53,11 @@
   <script src="/socket.io/socket.io.js"></script>
 
   <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/circular-progress/circular-progress.js"></script>
 
   <script src="/app.js"></script>
-  <script src="/modules/map.js"></script>
+  <script src="/modules/map/map.js"></script>
+  <script src="/modules/timer/timer.js"></script>
 
 </body>
 

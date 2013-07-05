@@ -9,15 +9,15 @@ window.angular.module('timer', [])
           interval;
 
         var progress = new window.CircularProgress({
-          radius: 50,
+          radius: 30,
           strokeStyle: '#3f6067',
-          lineWidth: 14,
+          lineWidth: 10,
           initial: {
             strokeStyle: '#eee5de',
-            lineWidth: 14
+            lineWidth: 10
           },
           text: {
-            font: 'bold 25px verdana',
+            font: 'bold 16px verdana',
             fillStyle: '#3f6067'
           }
         });
@@ -28,6 +28,10 @@ window.angular.module('timer', [])
           if (time < 2) {
             progress.options.strokeStyle = '#dd5f7a';
             progress.options.text.fillStyle = '#dd5f7a';
+          }
+          else {
+            progress.options.strokeStyle = '#3f6067';
+            progress.options.text.fillStyle = '#3f6067';
           }
           progress.options.text.value = text || Math.ceil(time);
           progress.update(time / scope.timerTime * 100);
