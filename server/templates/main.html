@@ -11,7 +11,7 @@
 
 </head>
 
-<body ng-controller="mapMondeCtrl" ng-class="{'world': !user.logged}">
+<body ng-controller="mapMondeCtrl" ng-class="{'world': !user.logged, 'waiting': waiting}">
 
   <div id="logo"></div>
 
@@ -36,12 +36,13 @@
           <p class="head">Question :</p>
           <p class="lbl">{{question.question}}</p>
         </div>
-        <div class="waiting" ng-show="waiting">
-          Waiting...
-        </div>
       </header>
       <map ng-show="! waiting"></map>
     </content>
+    <div class="waiting" ng-show="waiting">
+      <p>Connexion au serveur de jeu ...</p>
+      <p>Veuillez patienter</p>
+    </div>
   </div>
 
   <script src="/bower_components/less.js/dist/less-1.4.0.js"></script>
