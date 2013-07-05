@@ -22,12 +22,14 @@ server.emit("join-status", {
 
 // New question
 server.emit("question", {
-   question: "Ou se trouve Paris ?",
-   timer: 10
+  id: 1,
+  question: "Ou se trouve Paris ?",
+  time: 10
 })
 
 // Answer
 client.emit("answer", {
+  questionId: 1,
   lat: 10,
   long: 10
 })
@@ -35,6 +37,7 @@ client.emit("answer", {
 // -- Timer finish
 
 server.emit("result", {
+  questionId: 1,
   lat: 10,
   long: 10,
   ranks: [
@@ -42,7 +45,7 @@ server.emit("result", {
     {nickname: "Ludow", score: 5},
     ...
   ],
-  timer: 10
+  time: 10
 })
 
 // -- Timer finish
@@ -60,17 +63,19 @@ server.emit("result", {
 
 #### question
 
+* `int` `id`: Question ID
 * `string` `question`: Question
-* `int` `timer`: Timer in seconds
+* `int` `time`: Time in seconds
 
 #### result
 
+* `int` `questionId`: Question ID
 * `float` `lat`: Latitude
 * `float` `long`: Longitude
 * `array` `ranking`: Scores of the last question.
   * `string` `nickname`: User name
   * `int` `score`: Score
-* `int` `timer`: Timer in seconds
+* `int` `time`: Time in seconds
 
 ### Client
 
@@ -80,5 +85,6 @@ server.emit("result", {
 
 #### answer
 
+* `int` `questionId`: Question ID
 * `float` `lat`: Latitude
 * `float` `long`: Longitude
