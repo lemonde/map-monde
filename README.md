@@ -45,8 +45,8 @@ server.emit("result", {
     long: 10
   },
   ranks: [
-    {nickname: "Greg", score: 10},
-    {nickname: "Ludow", score: 5},
+    {userId: 1, nickname: "Greg", score: 10},
+    {userId: 2, nickname: "Ludow", score: 5},
     ...
   ],
   time: 10
@@ -78,6 +78,7 @@ server.emit("result", {
   * `float` `lat`: Latitude
   * `float` `long`: Longitude
 * `array` `ranking`: Scores of the last question.
+  * `int` `userId`: User id
   * `string` `nickname`: User name
   * `int` `score`: Score
 * `int` `time`: Time in seconds
