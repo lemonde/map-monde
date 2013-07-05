@@ -210,7 +210,7 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
 
 - (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet
 {
-    id data = [packet dataAsJSON];
+    id data = [packet args][0];
     if (!([data isKindOfClass:[NSDictionary class]] || data == nil))
         return;
     
