@@ -18,7 +18,8 @@
   "dependencies": {
     "express": "~3.3.3",
     "consolidate": "~0.9.1",
-    "handlebars": "~1.0.12"
+    "handlebars": "~1.0.12",
+    "socket.io": "~0.9.16"
   },
   "devDependencies": {
     "grunt-contrib-watch": "~0.4.4",

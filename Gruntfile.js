@@ -11,7 +11,6 @@ module.exports = function (grunt) {
       dev: {
         options: {
           port: 3000,
-          hostname: 'localhost',
           server: path.resolve('./config/server')
         }
       }
