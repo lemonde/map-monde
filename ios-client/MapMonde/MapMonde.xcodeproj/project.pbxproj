@@ -28,6 +28,11 @@
 		3F1962881786D62500C8A059 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1962871786D62500C8A059 /* Security.framework */; };
 		3F19628A1786D72B00C8A059 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1962891786D72B00C8A059 /* libicucore.dylib */; };
 		3F19628D1786D94A00C8A059 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F19628C1786D94A00C8A059 /* GameController.m */; };
+		3F19629117870D2F00C8A059 /* JoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F19628F17870D2F00C8A059 /* JoinViewController.m */; };
+		3F19629217870D2F00C8A059 /* JoinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F19629017870D2F00C8A059 /* JoinViewController.xib */; };
+		3F19629617870F4C00C8A059 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F19629417870F4C00C8A059 /* MapViewController.m */; };
+		3F19629717870F4C00C8A059 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F19629517870F4C00C8A059 /* MapViewController.xib */; };
+		3F19629917870F6C00C8A059 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F19629817870F6C00C8A059 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +72,13 @@
 		3F1962891786D72B00C8A059 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		3F19628B1786D94A00C8A059 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
 		3F19628C1786D94A00C8A059 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		3F19628E17870D2F00C8A059 /* JoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinViewController.h; sourceTree = "<group>"; };
+		3F19628F17870D2F00C8A059 /* JoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinViewController.m; sourceTree = "<group>"; };
+		3F19629017870D2F00C8A059 /* JoinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JoinViewController.xib; sourceTree = "<group>"; };
+		3F19629317870F4C00C8A059 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		3F19629417870F4C00C8A059 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		3F19629517870F4C00C8A059 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		3F19629817870F6C00C8A059 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,7 @@
 				3F19628A1786D72B00C8A059 /* libicucore.dylib in Frameworks */,
 				3F1962881786D62500C8A059 /* Security.framework in Frameworks */,
 				3F1962861786D62100C8A059 /* CFNetwork.framework in Frameworks */,
+				3F19629917870F6C00C8A059 /* MapKit.framework in Frameworks */,
 				3F195C491786CA3900C8A059 /* UIKit.framework in Frameworks */,
 				3F195C4B1786CA3900C8A059 /* Foundation.framework in Frameworks */,
 				3F195C4D1786CA3900C8A059 /* CoreGraphics.framework in Frameworks */,
@@ -113,6 +126,7 @@
 				3F195C4A1786CA3900C8A059 /* Foundation.framework */,
 				3F1962871786D62500C8A059 /* Security.framework */,
 				3F1962851786D62000C8A059 /* CFNetwork.framework */,
+				3F19629817870F6C00C8A059 /* MapKit.framework */,
 				3F195C4C1786CA3900C8A059 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
@@ -156,6 +170,12 @@
 		3F1962681786CC2700C8A059 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3F19628E17870D2F00C8A059 /* JoinViewController.h */,
+				3F19628F17870D2F00C8A059 /* JoinViewController.m */,
+				3F19629017870D2F00C8A059 /* JoinViewController.xib */,
+				3F19629317870F4C00C8A059 /* MapViewController.h */,
+				3F19629417870F4C00C8A059 /* MapViewController.m */,
+				3F19629517870F4C00C8A059 /* MapViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -248,6 +268,8 @@
 				3F195C5B1786CA3900C8A059 /* Default.png in Resources */,
 				3F195C5D1786CA3900C8A059 /* Default@2x.png in Resources */,
 				3F195C5F1786CA3900C8A059 /* Default-568h@2x.png in Resources */,
+				3F19629217870D2F00C8A059 /* JoinViewController.xib in Resources */,
+				3F19629717870F4C00C8A059 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +291,8 @@
 				3F1962831786D60400C8A059 /* SocketIOTransportWebsocket.m in Sources */,
 				3F1962841786D60400C8A059 /* SocketIOTransportXHR.m in Sources */,
 				3F19628D1786D94A00C8A059 /* GameController.m in Sources */,
+				3F19629117870D2F00C8A059 /* JoinViewController.m in Sources */,
+				3F19629617870F4C00C8A059 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +374,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapMonde/MapMonde-Prefix.pch";
 				INFOPLIST_FILE = "MapMonde/MapMonde-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -361,6 +386,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapMonde/MapMonde-Prefix.pch";
 				INFOPLIST_FILE = "MapMonde/MapMonde-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
