@@ -154,16 +154,31 @@
 
 - (void) showQuestion
 {
+    self.questionTitleLabel.hidden = NO;
+    self.questionTextLabel.hidden = NO;
+    self.scorePane.hidden = NO;
     NSString* questionTitle = [NSString stringWithFormat:@"QUESTION %d :", [[GameController sharedInstance] questionIdentifier]];
     NSString* questionText = [[GameController sharedInstance] question];
     self.questionTitleLabel.text = questionTitle;
     self.questionTextLabel.text = questionText;
-    self.questionCongratsLabel.text = nil;
-    
+    self.questionTextLabel.textColor = QUESTION_COLOR;
+    self.questionCongratsLabel.text = nil;    
 }
 
 - (void) showResults
 {
+    if (![[GameController sharedInstance] correctAnswer]) {
+        self.questionTitleLabel.hidden = YES;
+        self.questionTextLabel.hidden = YES;
+        self.questionCongratsLabel.text = @"Démarrage de la partie...";
+        self.scorePane.hidden = YES;
+        return;
+    } else {
+        self.questionTitleLabel.hidden = NO;
+        self.questionTextLabel.hidden = NO;
+        self.scorePane.hidden = NO;
+    }
+    
     NSString* questionTitle = [NSString stringWithFormat:@"RÉPONSE QUESTION %d :", [[GameController sharedInstance] questionIdentifier]];
     NSString* questionText = [[GameController sharedInstance] success]?nil:[NSString stringWithFormat:@"Tu est à %d km de la bonne réponse", (int)([[GameController sharedInstance] correctAnswerDistance]/1000)];
     self.questionTitleLabel.text = questionTitle;
