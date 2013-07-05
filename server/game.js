@@ -25,24 +25,32 @@ Game.prototype = {
     return this;
   },
 
+  log: function () {
+    console.log.apply(null, ['--- GAME'].concat(_.toArray(arguments)));
+  },
+
   // Routine
   routine: function () {
     var self = this;
+
+    this.log('start routine');
 
     async.series([
       // Ask question
       this.askQuestion.bind(this),
       // Wait question time
       function (cb) {
-        setTimeout(cb, self.currentQuestion.time);
+        self.log('wait question time', self.currentQuestion.time);
+        setTimeout(cb, self.currentQuestion.time * 1000);
       },
       // Send result
       this.sendResult.bind(this),
       // Wait pause time
       function (cb) {
-        setTimeout(cb, self.pauseTime);
+        self.log('wait pause time', self.pauseTime);
+        setTimeout(cb, self.pauseTime * 1000);
       }
-    ], this.routine);
+    ], this.routine.bind(this));
   },
 
   // When a new client is connected
@@ -61,9 +69,14 @@ Game.prototype = {
   // Register a new user
   registerUser: function (data, socket) {
     var userId = this.users.push(data.nickname) - 1;
+    this.log('add user', data.nickname);
+    this.log('currents users', this.users);
+
     socket.set('userId', userId, function () {
-      socket.emit('join-status', {error: false});
-    });
+      var data = {error: false};
+      this.log('emit "join-status"', data);
+      socket.emit('join-status', data);
+    }.bind(this));
   },
 
   // Handle an answer
@@ -92,13 +105,14 @@ Game.prototype = {
         question: question.question,
         time: question.time
       };
+      this.log('emit "question"', clientQuestion);
       this.io.sockets.emit('question', clientQuestion);
       callback();
     }.bind(this));
   },
 
   // Envoi du résultat
-  sendResult: function () {
+  sendResult: function (callback) {
 
     if (! this.currentQuestion)
       return ;
@@ -125,7 +139,9 @@ Game.prototype = {
       time: this.pauseTime
     };
 
+    this.log('emit "result"', result);
     this.io.sockets.emit('result', result);
+    callback();
   }
 };
 

@@ -17,7 +17,8 @@ module.exports = function (server) {
         solve: {
           lat: 1,
           long: 1
-        }
+        },
+        time: 10
       });
     },
     scoreComputer: function (solve, answer) {
