@@ -4,8 +4,6 @@ var template = '<div id="map_container"><div id="map"></div>   <span id="reset">
 
 function MapCtrl ($scope) {
 
-  $scope.vars = "toto";
-
 }
 
 app.directive('map', function () {
@@ -56,7 +54,7 @@ app.directive('map', function () {
 
       function validerReponseJoueur(){
         if(reponse_joueur !== null){
-          var reponse = reponse_joueur.getLatLng(); 
+          var reponse = reponse_joueur.getLatLng();
           alert(reponse);
         }
       }

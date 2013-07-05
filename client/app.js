@@ -7,6 +7,7 @@ app.controller('mapMondeCtrl', function ($scope) {
 
   // Check join response
   socket.on("join-status", function (error) {
+    console.log('receive join-status', error);
     if (error === false) {
       $scope.error = true;
     }
@@ -14,6 +15,14 @@ app.controller('mapMondeCtrl', function ($scope) {
       $scope.user.logged = true;
       $scope.$apply();
     }
+  });
+
+  socket.on("question", function (data) {
+    console.log('receive question', data);
+  });
+
+  socket.on("result", function (data) {
+    console.log('receive result', data);
   });
 
   $scope.user = {nickname: '', logged: false};
