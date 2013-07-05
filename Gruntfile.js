@@ -38,5 +38,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-simple-mocha');
 
   grunt.registerTask('server', ['express', 'watch:scripts']);
+  grunt.registerTask('server:simple', ['express', 'express-keepalive']);
   grunt.registerTask('test', ['simplemocha']);
 };
