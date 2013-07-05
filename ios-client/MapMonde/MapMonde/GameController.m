@@ -11,10 +11,15 @@
 #import "SocketIO.h"
 #import "SocketIOPacket.h"
 
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
+
 //#define SERVER_HOSTNAME 	@"172.30.1.55"
 //#define SERVER_PORT 		2828
 #define SERVER_HOSTNAME 	@"localhost"
 #define SERVER_PORT 		3000
+
+#define SUCCESS_DISTANCE_METERS 1000.*1000.
 
 NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
 
@@ -30,6 +35,8 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
 
 @property (nonatomic, strong) 		NSArray* results;
 @property (nonatomic, readwrite) 	GameLocation* correctAnswer;
+@property (nonatomic, readwrite) 	BOOL success;
+@property (nonatomic, readwrite) 	CLLocationDistance correctAnswerDistance;
 @property (nonatomic)				NSDate* resultsEndTime;
 
 @end
@@ -205,6 +212,18 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
     self.resultsEndTime = endTime;
     
     self.correctAnswer = answer;
+    BOOL success = NO;
+    CLLocationDistance distance = -1;
+    if (self.answer && self.correctAnswer)
+    {
+        CLLocation* loc1 = [[CLLocation alloc] initWithLatitude:self.answer.coordinate.latitude longitude:self.answer.coordinate.longitude];
+        CLLocation* loc2 = [[CLLocation alloc] initWithLatitude:self.correctAnswer.coordinate.latitude longitude:self.correctAnswer.coordinate.longitude];
+        distance = [loc1 distanceFromLocation:loc2];
+        success = distance < SUCCESS_DISTANCE_METERS;
+    }
+    self.success = success;
+    self.correctAnswerDistance = distance;
+    
     self.results = [data[@"ranking"] isKindOfClass:[NSArray class]]?data[@"ranking"]:nil;
     
     self.currentState = GameStateWaitingForQuestion;

@@ -13,6 +13,10 @@
 
 #import <MapKit/MapKit.h>
 
+#define SUCCCESS_COLOR [UIColor colorWithRed:0. green:192./255. blue:228./255. alpha:1.]
+#define FAILURE_COLOR [UIColor colorWithRed:239./255. green:75./255. blue:115./255. alpha:1.]
+#define QUESTION_COLOR [UIColor colorWithRed:0./255. green:89./255. blue:104./255. alpha:1.]
+
 @interface MapViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
@@ -156,10 +160,12 @@
 - (void) showResults
 {
     NSString* questionTitle = [NSString stringWithFormat:@"RÉPONSE QUESTION %d :", [[GameController sharedInstance] questionIdentifier]];
-    NSString* questionText = @"Hello";
+    NSString* questionText = [[GameController sharedInstance] success]?nil:[NSString stringWithFormat:@"Tu est à %d km de la bonne réponse", (int)([[GameController sharedInstance] correctAnswerDistance]/1000)];
     self.questionTitleLabel.text = questionTitle;
     self.questionTextLabel.text = questionText;
-    self.questionCongratsLabel.text = @"Bravo";
+    self.questionTextLabel.textColor = [[GameController sharedInstance] success]?SUCCCESS_COLOR:FAILURE_COLOR;
+    self.questionCongratsLabel.text = [[GameController sharedInstance] success]?@"BRAVO !":@"DOMMAGE !";
+    self.questionCongratsLabel.textColor = [[GameController sharedInstance] success]?SUCCCESS_COLOR:FAILURE_COLOR;
 }
 
 - (void) resetMapRegionAnimated:(BOOL)animated

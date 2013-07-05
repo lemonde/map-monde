@@ -56,7 +56,7 @@
 							<object class="IBUILabel" id="331041863">
 								<reference key="NSNextResponder" ref="9216103"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 20}, {163, 32}}</string>
+								<string key="NSFrame">{{20, 20}, {261, 32}}</string>
 								<reference key="NSSuperview" ref="9216103"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="813154263"/>
@@ -90,7 +90,7 @@
 							<object class="IBUILabel" id="813154263">
 								<reference key="NSNextResponder" ref="9216103"/>
 								<int key="NSvFlags">290</int>
-								<string key="NSFrame">{{191, 20}, {735, 32}}</string>
+								<string key="NSFrame">{{289, 20}, {735, 32}}</string>
 								<reference key="NSSuperview" ref="9216103"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="172572514"/>
@@ -133,13 +133,12 @@
 								<reference key="NSNextResponder" ref="9216103"/>
 								<int key="NSvFlags">292</int>
 								<array class="NSMutableArray" key="NSSubviews">
-									<object class="IBUILabel" id="354666089">
+									<object class="IBUILabel" id="266996659">
 										<reference key="NSNextResponder" ref="687683634"/>
 										<int key="NSvFlags">292</int>
 										<string key="NSFrameSize">{70, 70}</string>
 										<reference key="NSSuperview" ref="687683634"/>
 										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
@@ -169,7 +168,7 @@
 								<string key="NSFrame">{{934, 20}, {70, 70}}</string>
 								<reference key="NSSuperview" ref="9216103"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="354666089"/>
+								<reference key="NSNextKeyView" ref="266996659"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">3</int>
@@ -258,7 +257,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">timerLabel</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="354666089"/>
+						<reference key="destination" ref="266996659"/>
 					</object>
 					<int key="connectionID">23</int>
 				</object>
@@ -327,13 +326,13 @@
 						<int key="objectID">17</int>
 						<reference key="object" ref="687683634"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="354666089"/>
+							<reference ref="266996659"/>
 						</array>
 						<reference key="parent" ref="9216103"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">22</int>
-						<reference key="object" ref="354666089"/>
+						<reference key="object" ref="266996659"/>
 						<reference key="parent" ref="687683634"/>
 					</object>
 				</array>
@@ -379,6 +378,7 @@
 						<string key="questionCongratsLabel">UILabel</string>
 						<string key="questionTextLabel">UILabel</string>
 						<string key="questionTitleLabel">UILabel</string>
+						<string key="timerLabel">UILabel</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="mapView">
@@ -395,6 +395,10 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="questionTitleLabel">
 							<string key="name">questionTitleLabel</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="timerLabel">
+							<string key="name">timerLabel</string>
 							<string key="candidateClassName">UILabel</string>
 						</object>
 					</dictionary>

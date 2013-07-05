@@ -35,6 +35,7 @@
 		3F19629917870F6C00C8A059 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F19629817870F6C00C8A059 /* MapKit.framework */; };
 		3F19629B1787204A00C8A059 /* MapViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F19629A1787204A00C8A059 /* MapViewController~ipad.xib */; };
 		3F19629E17872E7300C8A059 /* GameLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F19629D17872E7200C8A059 /* GameLocation.m */; };
+		3F1962A017873DC400C8A059 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F19629F17873DC400C8A059 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		3F19629A1787204A00C8A059 /* MapViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MapViewController~ipad.xib"; sourceTree = "<group>"; };
 		3F19629C17872E7200C8A059 /* GameLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLocation.h; sourceTree = "<group>"; };
 		3F19629D17872E7200C8A059 /* GameLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLocation.m; sourceTree = "<group>"; };
+		3F19629F17873DC400C8A059 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				3F19628A1786D72B00C8A059 /* libicucore.dylib in Frameworks */,
 				3F1962881786D62500C8A059 /* Security.framework in Frameworks */,
 				3F1962861786D62100C8A059 /* CFNetwork.framework in Frameworks */,
+				3F1962A017873DC400C8A059 /* CoreLocation.framework in Frameworks */,
 				3F19629917870F6C00C8A059 /* MapKit.framework in Frameworks */,
 				3F195C491786CA3900C8A059 /* UIKit.framework in Frameworks */,
 				3F195C4B1786CA3900C8A059 /* Foundation.framework in Frameworks */,
@@ -133,6 +136,7 @@
 				3F1962851786D62000C8A059 /* CFNetwork.framework */,
 				3F19629817870F6C00C8A059 /* MapKit.framework */,
 				3F195C4C1786CA3900C8A059 /* CoreGraphics.framework */,
+				3F19629F17873DC400C8A059 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
