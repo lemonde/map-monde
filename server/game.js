@@ -82,7 +82,7 @@ Game.prototype = {
   // Handle an answer
   handleAnswer: function (data, socket) {
     socket.get('userId', function (err, userId) {
-      if (err || ! userId)
+      if (err)
         return ;
 
       if (! this.currentQuestion || this.currentQuestion.id !== data.questionId)
@@ -125,15 +125,21 @@ Game.prototype = {
       return a.score < b.score;
     });
 
+    var scoreMap = [
+      10,
+      5,
+      3,
+      1
+    ];
 
     var result = {
       questionId: this.currentQuestion.id,
       solve: this.currentQuestion.solve,
-      ranking: _.map(scoredAnswers, function (answer) {
+      ranking: _.map(scoredAnswers, function (answer, key) {
         return {
           userId: answer.userId,
           nickname: this.users[answer.userId],
-          score: answer.score
+          score: scoreMap[key] || 0
         };
       }.bind(this)),
       time: this.pauseTime
