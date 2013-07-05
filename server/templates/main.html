@@ -13,14 +13,34 @@
 
 <body ng-controller="mapMondeCtrl">
 
+  <div id="logo"></div>
+
   <div id="login" ng-show="!user.logged">
     <form>
-      <input type="text" ng-model="user.nickname" required>
-      <button type="submit" ng-click="login()">Join</button>
+      <input type="text" ng-model="user.nickname" placeholder="Pseudo" required>
+      <button type="submit" class="btn btn-block btn-primary btn-large" ng-click="login()">Join</button>
     </form>
   </div>
 
-  <map ng-show="user.logged"></map>
+  <div id="game" ng-show="user.logged">
+    <content>
+      <header>
+        <div class="message">
+          <p>Question :</p>
+          <p>Lorem ipsum et tout le merdier</p>
+        </div>
+      </header>
+      <map ng-show="question"></map>
+    </content>
+    <aside>
+      <p>Joueurs</p>
+      <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ul>
+    </aside>
+  </div>
 
   <script src="/bower_components/less.js/dist/less-1.4.0.js"></script>
   <script src="/bower_components/jquery/jquery.js"></script>

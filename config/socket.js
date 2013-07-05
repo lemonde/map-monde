@@ -13,7 +13,7 @@ module.exports = function (server) {
     questionProvider: function (cb) {
       cb({
         id: 1,
-        question: 'Ou se trouve Paris ?',
+        question: 'Où se trouve Paris ?',
         solve: {
           lat: 1,
           long: 1
