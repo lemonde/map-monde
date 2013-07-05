@@ -10,6 +10,8 @@
 
 #import <CoreLocation/CoreLocation.h>
 
+extern NSString* GameControllerErrorNotification;
+
 typedef enum {
     GameStateRequireJoin,
     GameStateJoining,

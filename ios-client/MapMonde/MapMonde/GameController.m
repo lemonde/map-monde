@@ -16,6 +16,8 @@
 #define SERVER_HOSTNAME 	@"localhost"
 #define SERVER_PORT 		3000
 
+NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
+
 @interface  GameController() <SocketIODelegate>
 
 @property (nonatomic, readwrite) 	GameState currentState;
@@ -183,6 +185,18 @@
 }
 
 //**************************************************************************
+#pragma mark - error handling
+
+- (void) handleJoinError:(NSError*)error
+{
+    //notifiy
+    [[NSNotificationCenter defaultCenter] postNotificationName:GameControllerErrorNotification
+                                                        object:self
+                                                      userInfo:@{@"error":[NSError errorWithDomain:[[NSBundle mainBundle] bundleIdentifier] code:0 userInfo:@{@"NSLocalizedDescription":@"Impossible de rejoindre la partie"}]}];
+    self.currentState = GameStateRequireJoin;
+}
+
+//**************************************************************************
 #pragma mark - SocketIODelegate
 
 - (void) socketIODidConnect:(SocketIO *)socket
@@ -199,7 +213,7 @@
     id data = [packet dataAsJSON];
     if (!([data isKindOfClass:[NSDictionary class]] || data == nil))
         return;
-
+    
     if ([packet.name isEqualToString:@"join-status"])
         [self handleJoinStatusEvent:data];
     else if ([packet.name isEqualToString:@"question"])
@@ -215,7 +229,14 @@
 }
 - (void) socketIO:(SocketIO *)socket onError:(NSError *)error
 {
-    NSLog(@"onError");
+    switch (self.currentState) {
+        case GameStateJoining: {
+            [self handleJoinError:error];
+            return;
+        default:
+            break;
+        }
+    }
 }
 
 //**************************************************************************

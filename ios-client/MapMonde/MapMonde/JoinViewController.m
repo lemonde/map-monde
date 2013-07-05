@@ -51,6 +51,10 @@
     }
     
     [[GameController sharedInstance] joinGameWithNickname:self.nicknameTextField.text];
+    [[NSUserDefaults standardUserDefaults] setObject:self.nicknameTextField.text forKey:@"MapMondePreviousNickname"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [self.nicknameTextField resignFirstResponder];
 }
 
 @end
