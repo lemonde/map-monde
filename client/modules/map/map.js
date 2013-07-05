@@ -18,7 +18,7 @@ window.angular.module('map', [])
           zoom: 3,
           minZoom: 3,
           maxZoom: 9,
-          attribution: 'Ludow, Amadour, Grég & José'
+          attribution: 'Ludow, Amadour, Greg, José & Charlotte'
         }).addTo(map);
 
 
