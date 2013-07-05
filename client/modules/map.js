@@ -21,8 +21,10 @@ app.directive('map', function () {
 
 
       var map = L.map('map').setView([29.91685, -1.14258], 3);
+      //var tile_url = 'http://{s}.tiles.mapbox.com/v3/lemonde.map-fr-labels/{z}/{x}/{y}.png';
+      var tile_url = 'http://{s}.tiles.mapbox.com/v3/lemonde.map-1q9aj45w/{z}/{x}/{y}.png';
 
-      L.tileLayer('http://{s}.tiles.mapbox.com/v3/lemonde.map-fr-labels/{z}/{x}/{y}.png', {
+      L.tileLayer(tile_url, {
         subdomains: ["a", "b", "c", "d"],
         zoom: 3,
         minZoom: 3,
