@@ -22,12 +22,14 @@ server.emit("join-status", {
 
 // New question
 server.emit("question", {
-   question: "Ou se trouve Paris ?",
-   time: 10
+  id: 1,
+  question: "Ou se trouve Paris ?",
+  time: 10
 })
 
 // Answer
 client.emit("answer", {
+  questionId: 1,
   lat: 10,
   long: 10
 })
@@ -35,6 +37,7 @@ client.emit("answer", {
 // -- Timer finish
 
 server.emit("result", {
+  questionId: 1,
   lat: 10,
   long: 10,
   ranks: [
