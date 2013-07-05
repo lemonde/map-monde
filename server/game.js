@@ -69,9 +69,14 @@ Game.prototype = {
   // Register a new user
   registerUser: function (data, socket) {
     var userId = this.users.push(data.nickname) - 1;
+    this.log('add user', data.nickname);
+    this.log('currents users', this.users);
+
     socket.set('userId', userId, function () {
-      socket.emit('join-status', {error: false});
-    });
+      var data = {error: false};
+      this.log('emit "join-status"', data);
+      socket.emit('join-status', data);
+    }.bind(this));
   },
 
   // Handle an answer
