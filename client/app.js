@@ -1,7 +1,7 @@
 'use strict';
 
 var app = window.angular.module('mapMonde', ['map', 'timer']),
-  socket = window.io.connect('http://localhost');
+  socket = window.io.connect('http://mapmonde.lemonde.fr');
 
 app.controller('mapMondeCtrl', function ($scope) {
 
