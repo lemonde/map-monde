@@ -17,7 +17,7 @@ window.angular.module('timer', [])
             lineWidth: 10
           },
           text: {
-            font: 'bold 20px verdana',
+            font: 'bold 16px verdana',
             fillStyle: '#3f6067'
           }
         });
@@ -28,6 +28,10 @@ window.angular.module('timer', [])
           if (time < 2) {
             progress.options.strokeStyle = '#dd5f7a';
             progress.options.text.fillStyle = '#dd5f7a';
+          }
+          else {
+            progress.options.strokeStyle = '#3f6067';
+            progress.options.text.fillStyle = '#3f6067';
           }
           progress.options.text.value = text || Math.ceil(time);
           progress.update(time / scope.timerTime * 100);

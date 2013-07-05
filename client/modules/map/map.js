@@ -25,6 +25,8 @@ window.angular.module('map', [])
         var playerMark, solutionMark, path;
 
         function onMapClick (e) {
+          if ($scope.result)
+            return ;
           emitAnswer(e.latlng);
           placePlayerMark(e.latlng);
         }
