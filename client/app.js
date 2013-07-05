@@ -19,6 +19,10 @@ app.controller('mapMondeCtrl', function ($scope) {
 
   socket.on("question", function (data) {
     console.log('receive question', data);
+
+    $scope.question = true;
+    $scope.$apply();
+
   });
 
   socket.on("result", function (data) {
@@ -26,6 +30,8 @@ app.controller('mapMondeCtrl', function ($scope) {
   });
 
   $scope.user = {nickname: '', logged: false};
+
+  $scope.question = false;
 
   $scope.login = function () {
 
