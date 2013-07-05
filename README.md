@@ -1,4 +1,12 @@
-# Le jeu de vos rêves
+# hackathon-win-team
+
+Amazing quiz game !
+
+## Start server
+
+```
+grunt server
+```
 
 ## Game cycle
 
