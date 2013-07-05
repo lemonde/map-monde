@@ -11,10 +11,15 @@
 #import "SocketIO.h"
 #import "SocketIOPacket.h"
 
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
+
 //#define SERVER_HOSTNAME 	@"172.30.1.55"
 //#define SERVER_PORT 		2828
 #define SERVER_HOSTNAME 	@"localhost"
 #define SERVER_PORT 		3000
+
+#define SUCCESS_DISTANCE_METERS 1000.*1000.
 
 NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
 
@@ -26,10 +31,13 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
 @property (nonatomic, strong)		NSString* question;
 @property (nonatomic)				NSInteger questionIdentifier;
 @property (nonatomic)				GameLocation* answer;
+@property (nonatomic)				NSDate* questionEndTime;
 
 @property (nonatomic, strong) 		NSArray* results;
 @property (nonatomic, readwrite) 	GameLocation* correctAnswer;
-
+@property (nonatomic, readwrite) 	BOOL success;
+@property (nonatomic, readwrite) 	CLLocationDistance correctAnswerDistance;
+@property (nonatomic)				NSDate* resultsEndTime;
 
 @end
 
@@ -106,6 +114,24 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
     [self sendAnswerEvent];
 }
 
+//**************************************************************************
+#pragma mark - timer management
+
+- (NSTimeInterval) timeLeftInCurrentState
+{
+    NSDate* endDate = nil;
+    if (self.currentState == GameStateWaitingForQuestion)
+        endDate = self.resultsEndTime;
+    if (self.currentState == GameStateQuestionInProgress)
+        endDate = self.questionEndTime;
+    
+    if (!endDate)
+        return -1;
+    
+    return [endDate timeIntervalSinceNow];
+}
+
+
 
 //**************************************************************************
 #pragma mark - event sending
@@ -150,6 +176,11 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
     self.question = data[@"question"];
     self.questionIdentifier = [data[@"id"] integerValue];
     
+    NSDate* endTime = nil;
+    if ([data[@"time"] isKindOfClass:[NSNumber class]])
+        endTime = [NSDate dateWithTimeIntervalSinceNow:[data[@"time"] doubleValue]];
+    self.questionEndTime = endTime;
+    
     //reset answer related properties
     self.answer = nil;
     self.correctAnswer = nil;
@@ -175,8 +206,24 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
     
     GameLocation* answer = [GameLocation gameLocationWithJSON:data[@"solve"]];
     
+    NSDate* endTime = nil;
+    if ([data[@"time"] isKindOfClass:[NSNumber class]])
+        endTime = [NSDate dateWithTimeIntervalSinceNow:[data[@"time"] doubleValue]];
+    self.resultsEndTime = endTime;
     
     self.correctAnswer = answer;
+    BOOL success = NO;
+    CLLocationDistance distance = -1;
+    if (self.answer && self.correctAnswer)
+    {
+        CLLocation* loc1 = [[CLLocation alloc] initWithLatitude:self.answer.coordinate.latitude longitude:self.answer.coordinate.longitude];
+        CLLocation* loc2 = [[CLLocation alloc] initWithLatitude:self.correctAnswer.coordinate.latitude longitude:self.correctAnswer.coordinate.longitude];
+        distance = [loc1 distanceFromLocation:loc2];
+        success = distance < SUCCESS_DISTANCE_METERS;
+    }
+    self.success = success;
+    self.correctAnswerDistance = distance;
+    
     self.results = [data[@"ranking"] isKindOfClass:[NSArray class]]?data[@"ranking"]:nil;
     
     self.currentState = GameStateWaitingForQuestion;

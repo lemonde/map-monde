@@ -13,13 +13,18 @@
 
 #import <MapKit/MapKit.h>
 
+#define SUCCCESS_COLOR [UIColor colorWithRed:0. green:192./255. blue:228./255. alpha:1.]
+#define FAILURE_COLOR [UIColor colorWithRed:239./255. green:75./255. blue:115./255. alpha:1.]
+#define QUESTION_COLOR [UIColor colorWithRed:0./255. green:89./255. blue:104./255. alpha:1.]
+
 @interface MapViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *questionTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *questionTextLabel;
 @property (weak, nonatomic) IBOutlet UILabel *questionCongratsLabel;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-
+@property (nonatomic, weak) NSTimer* 		timerRefreshTimer;
 @property (strong, nonatomic) GameLocation* answer;
 
 @end
@@ -93,22 +98,23 @@
     switch ([[GameController sharedInstance] currentState]) {
         case GameStateRequireJoin: {
             [self showJoinViewController];
+            self.timerRefreshTimer = nil;
             return; }
         case GameStateJoining: {
-
+            self.timerRefreshTimer = nil;
             return; }
         case GameStateWaitingForQuestion: {
             [self hideJoinViewController];
             [self showResults];
             [self showCorrectAnswer];
+            self.timerRefreshTimer = [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(refreshTimer) userInfo:nil repeats:YES];
             return; }
         case GameStateQuestionInProgress: {
             [self hideJoinViewController];
             [self showQuestion];
             [self resetMap];
+            self.timerRefreshTimer = [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(refreshTimer) userInfo:nil repeats:YES];
             return; }
-        default:
-            break;
     }
 }
 
@@ -154,10 +160,12 @@
 - (void) showResults
 {
     NSString* questionTitle = [NSString stringWithFormat:@"RÉPONSE QUESTION %d :", [[GameController sharedInstance] questionIdentifier]];
-    NSString* questionText = @"Hello";
+    NSString* questionText = [[GameController sharedInstance] success]?nil:[NSString stringWithFormat:@"Tu est à %d km de la bonne réponse", (int)([[GameController sharedInstance] correctAnswerDistance]/1000)];
     self.questionTitleLabel.text = questionTitle;
     self.questionTextLabel.text = questionText;
-    self.questionCongratsLabel.text = @"Bravo";
+    self.questionTextLabel.textColor = [[GameController sharedInstance] success]?SUCCCESS_COLOR:FAILURE_COLOR;
+    self.questionCongratsLabel.text = [[GameController sharedInstance] success]?@"BRAVO !":@"DOMMAGE !";
+    self.questionCongratsLabel.textColor = [[GameController sharedInstance] success]?SUCCCESS_COLOR:FAILURE_COLOR;
 }
 
 - (void) resetMapRegionAnimated:(BOOL)animated
@@ -191,6 +199,19 @@
     [self.mapView removeAnnotations:self.mapView.annotations];
 }
 
+- (void) refreshTimer
+{
+    NSTimeInterval timeLeft = [[GameController sharedInstance] timeLeftInCurrentState];
+    self.timerLabel.hidden = timeLeft <= 0;
+    self.timerLabel.text = [NSString stringWithFormat:@"%.0f", ceil(timeLeft)];
+}
+
+- (void) setTimerRefreshTimer:(NSTimer *)timerRefreshTimer
+{
+    [_timerRefreshTimer invalidate];
+    _timerRefreshTimer = timerRefreshTimer;
+}
+
 //**************************************************************************
 #pragma mark - actions
 
@@ -207,4 +228,8 @@
     [self showAnswer];
 }
 
+- (void)viewDidUnload {
+    [self setTimerLabel:nil];
+    [super viewDidUnload];
+}
 @end

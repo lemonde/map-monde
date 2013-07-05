@@ -33,10 +33,17 @@ typedef enum {
 //getting information about the current game
 @property (nonatomic, readonly) NSString* question;
 @property (nonatomic, readonly)	NSInteger questionIdentifier;
+@property (nonatomic, readonly)	NSDate* questionEndTime;
 - (void) answerQuestion:(GameLocation*)answer;
 
 //getting the scores of the previous question
 @property (nonatomic, readonly) NSArray* results;
 @property (nonatomic, readonly) GameLocation* correctAnswer;
+@property (nonatomic, readonly) BOOL success;
+@property (nonatomic, readonly) CLLocationDistance correctAnswerDistance;
+@property (nonatomic, readonly)	NSDate* resultsEndTime;
+
+//helper to get the time
+- (NSTimeInterval) timeLeftInCurrentState;
 
 @end
