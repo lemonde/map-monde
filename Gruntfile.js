@@ -24,11 +24,19 @@ module.exports = function (grunt) {
           nospawn: true
         }
       }
+    },
+
+    simplemocha: {
+      all: {
+        src: ['test/**/*']
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-express');
+  grunt.loadNpmTasks('grunt-simple-mocha');
 
   grunt.registerTask('server', ['express', 'watch:scripts']);
+  grunt.registerTask('test', ['simplemocha']);
 };
