@@ -15,20 +15,31 @@
 
   <div id="logo"></div>
 
-  <div id="login" ng-show="!user.logged">
+  <div id="login" ng-show="! user.logged">
     <form>
       <input type="text" ng-model="user.nickname" placeholder="Pseudo" required>
       <button type="submit" class="btn btn-block btn-primary btn-large" ng-click="login()">Join</button>
     </form>
   </div>
 
-  <div id="game" ng-show="user.logged">
-    <aside>
-      <p>Joueurs</p>
+  <div id="game">
+    <content>
+      <header>
+        <div class="message" ng-show="! waiting">
+          <p>Question :</p>
+          <p>{{question.question}}</p>
+          <div timer></div>
+        </div>
+        <div class="waiting" ng-show="waiting">
+          Waiting...
+        </div>
+      </header>
+      <map ng-show="! waiting"></map>
+    </content>
+    <aside ng-show="! waiting && result">
+      <p>Classement</p>
       <ul>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+        <li ng-repeat="rank in result.ranking">{{rank.nickname}} - {{rank.score}}</li>
       </ul>
     </aside>
     <div class="content">
@@ -49,9 +60,11 @@
   <script src="/socket.io/socket.io.js"></script>
 
   <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/circular-progress/circular-progress.js"></script>
 
   <script src="/app.js"></script>
-  <script src="/modules/map.js"></script>
+  <script src="/modules/map/map.js"></script>
+  <script src="/modules/timer/timer.js"></script>
 
 </body>
 

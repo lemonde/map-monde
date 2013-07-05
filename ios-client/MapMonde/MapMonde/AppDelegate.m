@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+#import "GameController.h"
 #import "MapViewController.h"
 
 @implementation AppDelegate
@@ -20,6 +21,19 @@
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    //display our game controller errors as alerts
+    [[NSNotificationCenter defaultCenter] addObserverForName:GameControllerErrorNotification
+                                                      object:[GameController sharedInstance]
+                                                       queue:[NSOperationQueue mainQueue]
+                                                  usingBlock:^(NSNotification *note) {
+                                                      [[[UIAlertView alloc] initWithTitle:@"Erreur"
+                                                                                  message:
+                                                        [[note userInfo][@"error"] localizedDescription]
+                                                                                 delegate:nil
+                                                                        cancelButtonTitle:@"OK"
+                                                                        otherButtonTitles:nil] show];
+                                                  }];
     
     return YES;
 }

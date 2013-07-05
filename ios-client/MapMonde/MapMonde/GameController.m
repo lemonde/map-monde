@@ -16,6 +16,8 @@
 #define SERVER_HOSTNAME 	@"localhost"
 #define SERVER_PORT 		3000
 
+NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
+
 @interface  GameController() <SocketIODelegate>
 
 @property (nonatomic, readwrite) 	GameState currentState;
@@ -23,10 +25,10 @@
 @property (nonatomic, strong)		NSString* nickname;
 @property (nonatomic, strong)		NSString* question;
 @property (nonatomic)				NSInteger questionIdentifier;
-@property (nonatomic)				CLLocationCoordinate2D answer;
+@property (nonatomic)				GameLocation* answer;
 
 @property (nonatomic, strong) 		NSArray* results;
-@property (nonatomic, readwrite) 	CLLocationCoordinate2D correctAnswer;
+@property (nonatomic, readwrite) 	GameLocation* correctAnswer;
 
 
 @end
@@ -94,7 +96,7 @@
 //**************************************************************************
 #pragma mark - answering
 
-- (void) answerQuestion:(CLLocationCoordinate2D)answer;
+- (void) answerQuestion:(GameLocation*)answer;
 {
     if (self.currentState != GameStateQuestionInProgress)
         return;
@@ -118,7 +120,8 @@
 
 - (void) sendAnswerEvent
 {
-    NSDictionary* answerArguments = @{@"answer":[self jsonFromLocationCoordinates:self.answer]};
+    NSDictionary* answerArguments = @{@"answer":[self.answer JSONSerialization],
+                                      @"questionId":@(self.questionIdentifier)};
     [_gameSocket sendEvent:@"answer" withData:answerArguments];
 }
 
@@ -148,11 +151,8 @@
     self.questionIdentifier = [data[@"id"] integerValue];
     
     //reset answer related properties
-    CLLocationCoordinate2D location;
-    location.latitude = 0;
-    location.longitude = 0;
-    self.answer = location;
-    self.correctAnswer = location;
+    self.answer = nil;
+    self.correctAnswer = nil;
     self.results = nil;
     
     self.currentState = GameStateQuestionInProgress;
@@ -163,23 +163,35 @@
     if (!self.currentState == GameStateQuestionInProgress)
         return;
     
-    if ([data[@"questionId"] isKindOfClass:[NSNumber class]])
+    if (![data[@"questionId"] isKindOfClass:[NSNumber class]])
         return;
     
     NSInteger questionId = [data[@"questionId"] integerValue];
     if (questionId != self.questionIdentifier)
         return;
     
-    if (!data[@"answer"])
+    if (!data[@"solve"])
         return;
     
-    CLLocationCoordinate2D answer = [self locationCoordinatesFromJSON:data[@"answer"]];
+    GameLocation* answer = [GameLocation gameLocationWithJSON:data[@"solve"]];
     
     
     self.correctAnswer = answer;
     self.results = [data[@"ranking"] isKindOfClass:[NSArray class]]?data[@"ranking"]:nil;
     
     self.currentState = GameStateWaitingForQuestion;
+}
+
+//**************************************************************************
+#pragma mark - error handling
+
+- (void) handleJoinError:(NSError*)error
+{
+    //notifiy
+    [[NSNotificationCenter defaultCenter] postNotificationName:GameControllerErrorNotification
+                                                        object:self
+                                                      userInfo:@{@"error":[NSError errorWithDomain:[[NSBundle mainBundle] bundleIdentifier] code:0 userInfo:@{@"NSLocalizedDescription":@"Impossible de rejoindre la partie"}]}];
+    self.currentState = GameStateRequireJoin;
 }
 
 //**************************************************************************
@@ -196,10 +208,10 @@
 
 - (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet
 {
-    id data = [packet dataAsJSON];
+    id data = [packet args][0];
     if (!([data isKindOfClass:[NSDictionary class]] || data == nil))
         return;
-
+    
     if ([packet.name isEqualToString:@"join-status"])
         [self handleJoinStatusEvent:data];
     else if ([packet.name isEqualToString:@"question"])
@@ -215,27 +227,14 @@
 }
 - (void) socketIO:(SocketIO *)socket onError:(NSError *)error
 {
-    NSLog(@"onError");
-}
-
-//**************************************************************************
-#pragma mark - CLLocation helpers
-
-- (NSDictionary*) jsonFromLocationCoordinates:(CLLocationCoordinate2D)location
-{
-    return @{@"lat": @(location.latitude), @"long": @(location.longitude)};
-}
-
-- (CLLocationCoordinate2D) locationCoordinatesFromJSON:(id)json
-{
-    CLLocationCoordinate2D location;
-    location.latitude = 0;
-    location.longitude = 0;
-    if ([json isKindOfClass:[NSDictionary class]] && [json[@"lat"] isKindOfClass:[NSNumber class]] && [json[@"long"] isKindOfClass:[NSNumber class]]) {
-        location.latitude = [json[@"lat"] doubleValue];
-        location.longitude = [json[@"long"] doubleValue];
+    switch (self.currentState) {
+        case GameStateJoining: {
+            [self handleJoinError:error];
+            return;
+        default:
+            break;
+        }
     }
-    return location;
 }
 
 
