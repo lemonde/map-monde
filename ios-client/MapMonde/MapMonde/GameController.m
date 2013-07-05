@@ -14,10 +14,10 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-//#define SERVER_HOSTNAME 	@"172.30.1.55"
-//#define SERVER_PORT 		2828
-#define SERVER_HOSTNAME 	@"localhost"
+#define SERVER_HOSTNAME 	@"172.30.1.199"
 #define SERVER_PORT 		3000
+//#define SERVER_HOSTNAME 	@"localhost"
+//#define SERVER_PORT 		3000
 
 #define SUCCESS_DISTANCE_METERS 1000.*1000.
 
