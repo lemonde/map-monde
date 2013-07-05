@@ -120,7 +120,8 @@ NSString* GameControllerErrorNotification = @"GameControllerErrorNotification";
 
 - (void) sendAnswerEvent
 {
-    NSDictionary* answerArguments = @{@"answer":[self jsonFromLocationCoordinates:self.answer]};
+    NSDictionary* answerArguments = @{@"answer":[self jsonFromLocationCoordinates:self.answer],
+                                      @"questionId":@(self.questionIdentifier)};
     [_gameSocket sendEvent:@"answer" withData:answerArguments];
 }
 

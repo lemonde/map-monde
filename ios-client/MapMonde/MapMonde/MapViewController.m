@@ -55,6 +55,10 @@
     [super viewDidLoad];
 
     [self resetMapRegionAnimated:NO];
+    
+    //setup the tap gesture to play
+    UITapGestureRecognizer* gr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleMapTap:)];
+    [self.mapView addGestureRecognizer:gr];
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -162,5 +166,16 @@
     worldRegion.span.longitudeDelta = 360;
     [self.mapView setRegion:worldRegion animated:animated];
 }
+
+//**************************************************************************
+#pragma mark - actions
+
+- (IBAction)handleMapTap:(UITapGestureRecognizer*)gestureRecognizer
+{
+    CLLocationCoordinate2D answer = [self.mapView convertPoint:[gestureRecognizer locationInView:self.mapView] toCoordinateFromView:self.mapView];
+    
+    [[GameController sharedInstance] answerQuestion:answer];
+}
+
 
 @end
